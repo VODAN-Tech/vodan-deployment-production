@@ -1,0 +1,34 @@
+general:
+  # (!) Change clientUrl
+  # clientUrl: <dsw-url>
+  clientUrl: https://dsw.vodan.fairdatapoint.org
+  # (!) Change secret to some random value if you are running in production environment (due to security)
+  # serviceToken: <dsw-secret>
+  secret: b7zFNUhFYIFLmDSFKFkp0Bnp8Z3uWGnH
+  # (!) Change serviceToken to some random value if you are running in production environment (due to security)
+  # serviceToken: <dsw-service-token>
+  serviceToken: NlQSNbGvh7EtcpinGnHE9g91
+
+database:
+  host: mongo
+  databaseName: wizard
+  port: 27017
+  authEnabled: false
+  username:
+  password:
+
+messaging:
+  username: guest
+  password: guest
+
+mail:
+  # (!) Fill configuration to your mail server and change 'enabled' to true
+  enabled: false
+  name:
+  email:
+  host:
+  port:
+  ssl:
+  authEnabled:
+  username:
+  password:

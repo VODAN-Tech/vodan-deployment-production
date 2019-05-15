@@ -1,0 +1,26 @@
+instance:
+    # (!) Change clientUrl
+    # clientUrl: <fdp-url>
+    clientUrl: https://fdp.vodan.fairdatapoint.org
+    # (!) Change persistentUrl
+    # persistentUrl: <fdp-persistent-url>
+    persistentUrl: https://fdp.vodan.fairdatapoint.org
+    # (!) Change secret to some random value if you are running in production environment (due to security)
+    # serviceToken: <dsw-secret>
+    secret: b7zFNUhFYIFLmDSFKFkp0Bnp8Z3uWGnH
+    # (!) Change serviceToken to some random value if you are running in production environment (due to security)
+    # serviceToken: <dsw-service-token>
+    serviceToken: NlQSNbGvh7EtcpinGnHE9g91
+
+security:
+    jwt:
+        token:
+            # (!) Change secret to some random 128 characters string if you are running in production environment (due to security)
+            # serviceToken: <fdp-secret>
+            secret-key: 3fWWqp56mWjUmRHKn2v49gqdMwGFQASJDFvRSoL4aVMnAjXNahF9nVaYfEtV4bsvENdmZMf0xRbYZWBZ17YdQX1WriFkhYFMzGWpj1dGHesw0SlSP7TtUKfcSJmXxPzU
+
+# repository settings (can be changed to different repository)
+repository:
+    type: 5
+    blazegraph:
+        url: http://blazegraph:8080/blazegraph

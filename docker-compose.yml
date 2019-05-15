@@ -1,0 +1,90 @@
+version: '3'
+services:
+
+  dsw_server:
+    image: datastewardshipwizard/wizard-server:develop
+    restart: always
+    hostname: dsw_server
+    depends_on:
+      - rabbitmq
+      - mongo
+    volumes:
+      - ./dsw-server/application.yml:/application/engine-wizard/config/application.yml:ro
+      - ./dsw-server/integration.yml:/application/engine-wizard/config/integration.yml:ro
+      - dmp-templates:/application/engine-wizard/templates/dmp:ro
+
+  dsw_client:
+    image: datastewardshipwizard/wizard-client:develop
+    restart: always
+    hostname: dsw_client
+    environment:
+    # (!) Change API_URL
+    #   API_URL: <dsw-url>
+        API_URL: https://api.dsw.vodan.fairdatapoint.org
+    # (i) If you want to adjust look&feel/branding
+    #volumes:
+    #  - ./dsw-client/extras.scss:/src/scss/customizations/_extras.scss:ro
+    #  - ./dsw-client/overrides.scss:/src/scss/customizations/_overrides.scss:ro
+    #  - ./dsw-client/variables.scss:/src/scss/customizations/_variables.scss:ro
+    #  - ./dsw-client/assets:/usr/share/nginx/html/assets:ro
+
+  docworker:
+    image: datastewardshipwizard/document-worker:2.4.0
+    restart: always
+    depends_on:
+      - rabbitmq
+    volumes:
+      - ./docworker/config.yml:/app/config.yml:ro
+      - dmp-templates:/app/templates:ro
+
+  mongo:
+    image: mongo:4.2.3
+    restart: always
+    ports:
+      - 127.0.0.1:27017:27017
+    environment:
+      MONGO_INITDB_DATABASE: wizard
+    volumes:
+     - ./mongo/data:/data/db
+     - ./mongo/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+
+  rabbitmq:
+    image: rabbitmq:3.8.2-management
+    restart: always
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+
+  fdp:
+      image: fairdata/fairdatapoint:1.5.0
+      hostname: fdp
+      volumes:
+          - ./fdp/application.yml:/fdp/application.yml:ro
+
+  fdp_client:
+      image: fairdata/fairdatapoint-client:1.5.0
+      hostname: fdp_client
+      environment:
+          - FDP_HOST=fdp
+
+  blazegraph:
+      image: metaphacts/blazegraph-basic:2.2.0-20160908.003514-6
+      volumes:
+          - ./blazegraph:/blazegraph-data
+
+  # (i) Use proxy if you want to expose application on some domain
+  #     Follow certbot instructions and generate cert with
+  #     "webroot -w /var/www/letsencrypt"
+  proxy:
+    image: nginx:1.17
+    ports:
+      - 80:80 #< for certbot (otherwise redirected to 443)
+      - 443:443 #< for client
+      - 3443:3443 #< for server/api
+    volumes:
+      - ./proxy/nginx:/etc/nginx:ro
+      - ./proxy/letsencrypt:/var/www/letsencrypt:ro
+      - /etc/letsencrypt:/etc/letsencrypt:ro
+
+volumes:
+  dmp-templates:
