@@ -60,7 +60,31 @@ db.getCollection('appConfigs').insert(
     "updatedAt" : ISODate("2020-06-12T14:01:20.577Z"),
     "submission" : {
         "enabled" : true,
-        "services" : []
+        "services" : [
+            {
+                "id" : "fdp",
+                "name" : "FAIR Data Point",
+                "description" : "",
+                "props" : [],
+                "supportedFormats" : [
+                    {
+                        "templateUuid" : "43a3fdd1-8535-42e0-81a7-5edbff296e65",
+                        "formatUuid" : "d3e98eb6-344d-481f-8e37-6a67b6cd1ad2"
+                    }
+                ],
+                "request" : {
+                    "method" : "POST",
+                    "url" : "https://fdp.vodan.fairdatapoint.org/",
+                    "headers" : {
+                        "Authorization" : "Bearer a274793046e34a219fd0ea6362fcca61a001500b71724f4c973a017031653c20"
+                    },
+                    "multipart" : {
+                        "enabled" : false,
+                        "fileName" : ""
+                    }
+                }
+            }
+        ]
     },
     "template" : {
         "recommendedTemplateUuid" : null
@@ -423,3 +447,12 @@ db.getCollection('migrations').insertMany([
     "createdAt" : "2020-06-12 14:01:20.853859 UTC"
 }
 ])
+
+db = db.getSiblingDB('fdp')
+
+db.getCollection("apiKey").insert({
+    "uuid" : "a1c00673-24c5-4e0a-bdbe-22e961ee7548",
+    "userUuid" : "7e64818d-6276-46fb-8bb1-732e6e09f7e9",
+    "token" : "a274793046e34a219fd0ea6362fcca61a001500b71724f4c973a017031653c20",
+    "_class" : "nl.dtls.fairdatapoint.entity.apikey.ApiKey"
+})
