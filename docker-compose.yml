@@ -74,15 +74,11 @@ services:
       volumes:
           - ./blazegraph:/blazegraph-data
 
-  # (i) Use proxy if you want to expose application on some domain
-  #     Follow certbot instructions and generate cert with
-  #     "webroot -w /var/www/letsencrypt"
   proxy:
     image: nginx:1.17
     ports:
-      - 80:80 #< for certbot (otherwise redirected to 443)
-      - 443:443 #< for client
-      - 3443:3443 #< for server/api
+      - 80:80
+      - 443:443
     volumes:
       - ./proxy/nginx:/etc/nginx:ro
       - ./proxy/letsencrypt:/var/www/letsencrypt:ro
