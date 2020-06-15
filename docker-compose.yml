@@ -21,10 +21,7 @@ services:
     # (!) Change API_URL
     #   API_URL: <dsw-url>
         API_URL: https://api.dsw.vodan.fairdatapoint.org
-    # (i) If you want to adjust look&feel/branding
     volumes:
-    #  - ./dsw-client/extras.scss:/src/scss/customizations/_extras.scss:ro
-    #  - ./dsw-client/overrides.scss:/src/scss/customizations/_overrides.scss:ro
      - ./dsw-client/variables.scss:/src/scss/customizations/_variables.scss:ro
      - ./dsw-client/assets:/usr/share/nginx/html/assets:ro
      - ./dsw-client/configuration/provisioning.json:/configuration/provisioning.json:ro
@@ -68,6 +65,10 @@ services:
       hostname: fdp_client
       environment:
           - FDP_HOST=fdp
+      volumes:
+           - ./fdp-client/variables.scss:/src/scss/custom/_variables.scss:ro
+           - ./fdp-client/assets:/usr/share/nginx/html/assets:ro
+           - ./fdp-client/favicon.ico:/usr/share/nginx/html/favicon.ico:ro
 
   blazegraph:
       image: metaphacts/blazegraph-basic:2.2.0-20160908.003514-6
