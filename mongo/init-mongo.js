@@ -40,7 +40,7 @@ db.getCollection('appConfigs').insert(
     },
     "questionnaire" : {
         "levels" : {
-            "enabled" : true
+            "enabled" : false
         },
         "feedback" : {
             "enabled" : false,
