@@ -22,11 +22,13 @@ services:
     #   API_URL: <dsw-url>
         API_URL: https://api.dsw.vodan.fairdatapoint.org
     # (i) If you want to adjust look&feel/branding
-    #volumes:
+    volumes:
     #  - ./dsw-client/extras.scss:/src/scss/customizations/_extras.scss:ro
     #  - ./dsw-client/overrides.scss:/src/scss/customizations/_overrides.scss:ro
-    #  - ./dsw-client/variables.scss:/src/scss/customizations/_variables.scss:ro
-    #  - ./dsw-client/assets:/usr/share/nginx/html/assets:ro
+     - ./dsw-client/variables.scss:/src/scss/customizations/_variables.scss:ro
+     - ./dsw-client/assets:/usr/share/nginx/html/assets:ro
+     - ./dsw-client/configuration/provisioning.json:/configuration/provisioning.json:ro
+     - ./dsw-client/favicon.ico:/usr/share/nginx/html/favicon.ico:ro
 
   docworker:
     image: datastewardshipwizard/document-worker:2.4.0
