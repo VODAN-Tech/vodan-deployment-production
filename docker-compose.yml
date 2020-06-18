@@ -11,7 +11,7 @@ services:
     volumes:
       - ./dsw-server/application.yml:/application/engine-wizard/config/application.yml:ro
       - ./dsw-server/integration.yml:/application/engine-wizard/config/integration.yml:ro
-      - dmp-templates:/application/engine-wizard/templates/dmp:ro
+      - ./dsw-server/templates:/application/engine-wizard/templates/dmp:ro
 
   dsw_client:
     image: datastewardshipwizard/wizard-client:develop
@@ -34,7 +34,7 @@ services:
       - rabbitmq
     volumes:
       - ./docworker/config.yml:/app/config.yml:ro
-      - dmp-templates:/app/templates:ro
+      - ./dsw-server/templates:/app/templates:ro
 
   mongo:
     image: mongo:4.2.3

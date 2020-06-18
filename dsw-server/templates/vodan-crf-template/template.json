@@ -1,0 +1,32 @@
+{
+  "uuid": "ccf5ce08-c932-4e11-a5fd-c52378a86c20",
+  "name": "WHO COVID CRF (RDF)",
+  "description": "WHO COVID CRF in RDF using ontology",
+  "allowedPackages": [
+    {
+      "orgId": "vodan",
+      "kmId": "who-covid19-crf",
+      "minVersion": "0.1.0",
+      "maxVersion": null
+    }
+  ],
+  "formats": [
+    {
+      "uuid": "9c7d572e-c273-4323-97a4-ab38f943c33a",
+      "name": "Turtle (TTL)",
+      "shortName": "ttl",
+      "icon": "fas fa-file-code",
+      "color": "#f15a24",
+      "steps": [
+        {
+          "name": "jinja",
+          "options": {
+            "template": "main.ttl.j2",
+            "content-type": "text/ttl",
+            "extension": "ttl"
+          }
+        }
+      ]
+    }
+  ]
+}
