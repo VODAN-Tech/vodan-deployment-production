@@ -6,7 +6,7 @@
 @prefix vodan_inst: <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/> .
 @prefix vodan_avpu: <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/avpu-list/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
-
+# Using VODAN ontology 1.1.2
 
 <>  a vodan:who-covid-19-rapid-crf ;
     {#- MODULE 1 #}
@@ -19,9 +19,8 @@
       ] ;
       obo:BFO_0000051 [
         a vodan:Country ;
-        vodan:has_value <{{crf.country}}>;
+        vodan:has_value <{{crf.country__uri}}>;
       ] ;
-      {#- TODO: country (as integration question) #}
       obo:BFO_0000051 [
         a vodan:Enrolment ;
         vodan:has_literal_value "{{ crf.enrolmentDate }}"^^xsd:date;
@@ -615,7 +614,52 @@
           vodan:has_value vodan_inst:C17998 ;  # UNKNOWN
         ] ;
         {%- endif %}
-        {#- TODO: antiviral #}
+        {%- if crf.preadmissionAntiviral == crf.preadmissionAntiviral_Chloroquine %}
+        obo:BFO_0000051 [
+          a vodan:Antiviral ;
+          vodan:has_value vodan_inst:C49488 ;  # YES
+          obo:BFO_0000051 [
+            a vodan:Which_antiviral ;
+            vodan:has_value vodan:Chloroquine/hydroxychloroquine ; {# TODO #}
+          ] ;
+        ] ;
+        {%- elif crf.preadmissionAntiviral == crf.preadmissionAntiviral_Azithromycin %}
+        obo:BFO_0000051 [
+          a vodan:Antiviral ;
+          vodan:has_value vodan_inst:C49488 ;  # YES
+          obo:BFO_0000051 [
+            a vodan:Which_antiviral ;
+            vodan:has_value vodan:Azithromycin ;
+          ] ;
+        ] ;
+        {%- elif crf.preadmissionAntiviral == crf.preadmissionAntiviral_Kaletra %}
+        obo:BFO_0000051 [
+          a vodan:Antiviral ;
+          vodan:has_value vodan_inst:C49488 ;  # YES
+          obo:BFO_0000051 [
+            a vodan:Which_antiviral ;
+            vodan:has_value vodan:Lopinavir_Ritonavir ;
+          ] ;
+        ] ;
+        {%- elif crf.preadmissionAntiviral == crf.preadmissionAntiviral_Favipiravir %}
+        obo:BFO_0000051 [
+          a vodan:Antiviral ;
+          vodan:has_value vodan_inst:C49488 ;  # YES
+          obo:BFO_0000051 [
+            a vodan:Which_antiviral ;
+            vodan:has_value vodan:Favipiravir ;
+          ] ;
+        ] ;
+        {%- elif crf.preadmissionAntiviral == crf.preadmissionAntiviral_Other %}
+        obo:BFO_0000051 [
+          a vodan:Antiviral ;
+          vodan:has_value vodan_inst:C49488 ;  # YES
+          obo:BFO_0000051 [
+            a vodan:Which_other_antiviral ;
+            vodan:has_literal_value "{{ crf.preadmissionAntiviral_OtherText }}" ;
+          ] ;
+        ] ;
+        {%- endif %}
       ] ;
       {%- endif %}
       {#- SIGNS AND SYMPTOMS ON ADMISSION #}
@@ -673,17 +717,17 @@
         {%- endif %}
         {%- if crf.admissionSignsCoughHaemoptysis == crf.admissionSignsCoughHaemoptysis_yes %}
         obo:BFO_0000051 [
-          a vodan:Cough_maemoptysis ; {#- typo in ontology #}
+          a vodan:Cough_haemoptysis ;
           vodan:has_value vodan_inst:C49488 ;  # YES
         ] ;
         {%- elif crf.admissionSignsCoughHaemoptysis == crf.admissionSignsCoughHaemoptysis_no %}
         obo:BFO_0000051 [
-          a vodan:Cough_maemoptysis ;
+          a vodan:Cough_haemoptysis ;
           vodan:has_value vodan_inst:C49487 ;  # NO
         ] ;
         {%- elif crf.admissionSignsCoughHaemoptysis == crf.admissionSignsCoughHaemoptysis_unknown %}
         obo:BFO_0000051 [
-          a vodan:Cough_maemoptysis ;
+          a vodan:Cough_haemoptysis ;
           vodan:has_value vodan_inst:C17998 ;  # UNKNOWN
         ] ;
         {%- endif %}
@@ -1231,7 +1275,6 @@
         obo:BFO_0000051 [
           a vodan:Antifungal_agent ;
           vodan:has_value vodan_inst:C49488 ;  # YES
-          {#- TODO: No antifungal agent #}
         ] ;
         {%- elif crf.medicationAntifungal == crf.medicationAntifungal_no %}
         obo:BFO_0000051 [
@@ -1445,7 +1488,7 @@
           {%- elif crf.supportCareOxygenInterface == crf.supportCareOxygenInterface_CPAP %}
           obo:BFO_0000051 [
             a vodan:Oxygen_interface ;
-            vodan:has_value vodan:CPAP/NIV_Mask ; {#- TODO: will this work? #}
+            vodan:has_value vodan:CPAP_NIV_Mask ;
           ] ;
           {%- elif crf.supportCareOxygenInterface == crf.supportCareOxygenSource_Unknown %}
           obo:BFO_0000051 [
@@ -1576,6 +1619,9 @@
         obo:BFO_0000051 [
           a vodan:Haemoglobin ;
           vodan:has_literal_value "{{ crf.admissionLabResults_Haemoglobin_value }}"^^xsd:float;
+          {%- if crf.admissionLabResults_Haemoglobin_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ crf.admissionLabResults_Haemoglobin_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif crf.admissionLabResults_Haemoglobin == crf.admissionLabResults_Haemoglobin_notdone %}
         obo:BFO_0000051 [
@@ -1587,6 +1633,9 @@
         obo:BFO_0000051 [
           a vodan:WBC_count ;
           vodan:has_literal_value "{{ crf.admissionLabResults_WBC_value }}"^^xsd:float;
+          {%- if crf.admissionLabResults_WBC_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ crf.admissionLabResults_WBC_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif crf.admissionLabResults_WBC == crf.admissionLabResults_WBC_notdone %}
         obo:BFO_0000051 [
@@ -1598,6 +1647,9 @@
         obo:BFO_0000051 [
           a vodan:Haematocrit ;
           vodan:has_literal_value "{{ crf.admissionLabResults_Haematocrit_value }}"^^xsd:float;
+          {%- if crf.admissionLabResults_Haematocrit_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ crf.admissionLabResults_Haematocrit_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif crf.admissionLabResults_Haematocrit == crf.admissionLabResults_Haematocrit_notdone %}
         obo:BFO_0000051 [
@@ -1609,6 +1661,9 @@
         obo:BFO_0000051 [
           a vodan:Platelets ;
           vodan:has_literal_value "{{ crf.admissionLabResults_Platelets_value }}"^^xsd:float;
+          {%- if crf.admissionLabResults_Platelets_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ crf.admissionLabResults_Platelets_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif crf.admissionLabResults_Platelets == crf.admissionLabResults_Platelets_notdone %}
         obo:BFO_0000051 [
@@ -1620,6 +1675,9 @@
         obo:BFO_0000051 [
           a vodan:APTT_APTR ;
           vodan:has_literal_value "{{ crf.admissionLabResults_APTT_value }}"^^xsd:float;
+          {%- if crf.admissionLabResults_APTT_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ crf.admissionLabResults_APTT_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif crf.admissionLabResults_APTT == crf.admissionLabResults_APTT_notdone %}
         obo:BFO_0000051 [
@@ -1631,6 +1689,9 @@
         obo:BFO_0000051 [
           a vodan:PT ;
           vodan:has_literal_value "{{ crf.admissionLabResults_PT_value }}"^^xsd:float;
+          {%- if crf.admissionLabResults_PT_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ crf.admissionLabResults_PT_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif crf.admissionLabResults_PT == crf.admissionLabResults_PT_notdone %}
         obo:BFO_0000051 [
@@ -1642,6 +1703,9 @@
         obo:BFO_0000051 [
           a vodan:INR ;
           vodan:has_literal_value "{{ crf.admissionLabResults_INR_value }}"^^xsd:float;
+          {%- if crf.admissionLabResults_INR_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ crf.admissionLabResults_INR_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif crf.admissionLabResults_INR == crf.admissionLabResults_INR_notdone %}
         obo:BFO_0000051 [
@@ -1653,6 +1717,9 @@
         obo:BFO_0000051 [
           a vodan:ALT_SGPT ;
           vodan:has_literal_value "{{ crf.admissionLabResults_ALT_value }}"^^xsd:float;
+          {%- if crf.admissionLabResults_ALT_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ crf.admissionLabResults_ALT_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif crf.admissionLabResults_ALT == crf.admissionLabResults_ALT_notdone %}
         obo:BFO_0000051 [
@@ -1664,6 +1731,9 @@
         obo:BFO_0000051 [
           a vodan:Total_bilirubin ;
           vodan:has_literal_value "{{ crf.admissionLabResults_Bilirubin_value }}"^^xsd:float;
+          {%- if crf.admissionLabResults_Bilirubin_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ crf.admissionLabResults_Bilirubin_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif crf.admissionLabResults_Bilirubin == crf.admissionLabResults_Bilirubin_notdone %}
         obo:BFO_0000051 [
@@ -1675,6 +1745,9 @@
         obo:BFO_0000051 [
           a vodan:AST_SGOT ;
           vodan:has_literal_value "{{ crf.admissionLabResults_AST_value }}"^^xsd:float;
+          {%- if crf.admissionLabResults_AST_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ crf.admissionLabResults_AST_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif crf.admissionLabResults_AST == crf.admissionLabResults_AST_notdone %}
         obo:BFO_0000051 [
@@ -1686,6 +1759,9 @@
         obo:BFO_0000051 [
           a vodan:Urea_(BUN) ;
           vodan:has_literal_value "{{ crf.admissionLabResults_Urea_value }}"^^xsd:float;
+          {%- if crf.admissionLabResults_Urea_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ crf.admissionLabResults_Urea_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif crf.admissionLabResults_Urea == crf.admissionLabResults_Urea_notdone %}
         obo:BFO_0000051 [
@@ -1697,6 +1773,9 @@
         obo:BFO_0000051 [
           a vodan:Lactate ;
           vodan:has_literal_value "{{ crf.admissionLabResults_Lactate_value }}"^^xsd:float;
+          {%- if crf.admissionLabResults_Lactate_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ crf.admissionLabResults_Lactate_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif crf.admissionLabResults_Lactate == crf.admissionLabResults_Lactate_notdone %}
         obo:BFO_0000051 [
@@ -1708,6 +1787,9 @@
         obo:BFO_0000051 [
           a vodan:Creatinine ;
           vodan:has_literal_value "{{ crf.admissionLabResults_Creatinine_value }}"^^xsd:float;
+          {%- if crf.admissionLabResults_Creatinine_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ crf.admissionLabResults_Creatinine_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif crf.admissionLabResults_Creatinine == crf.admissionLabResults_Creatinine_notdone %}
         obo:BFO_0000051 [
@@ -1719,6 +1801,9 @@
         obo:BFO_0000051 [
           a vodan:Sodium ;
           vodan:has_literal_value "{{ crf.admissionLabResults_Sodium_value }}"^^xsd:float;
+          {%- if crf.admissionLabResults_Sodium_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ crf.admissionLabResults_Sodium_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif crf.admissionLabResults_Sodium == crf.admissionLabResults_Sodium_notdone %}
         obo:BFO_0000051 [
@@ -1730,6 +1815,9 @@
         obo:BFO_0000051 [
           a vodan:Potassium ;
           vodan:has_literal_value "{{ crf.admissionLabResults_Potassium_value }}"^^xsd:float;
+          {%- if crf.admissionLabResults_Potassium_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ crf.admissionLabResults_Potassium_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif crf.admissionLabResults_Potassium == crf.admissionLabResults_Potassium_notdone %}
         obo:BFO_0000051 [
@@ -1741,6 +1829,9 @@
         obo:BFO_0000051 [
           a vodan:Procalcitonin ;
           vodan:has_literal_value "{{ crf.admissionLabResults_Procalcitonin_value }}"^^xsd:float;
+          {%- if crf.admissionLabResults_Procalcitonin_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ crf.admissionLabResults_Procalcitonin_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif crf.admissionLabResults_Procalcitonin == crf.admissionLabResults_Procalcitonin_notdone %}
         obo:BFO_0000051 [
@@ -1752,6 +1843,9 @@
         obo:BFO_0000051 [
           a vodan:CRP ;
           vodan:has_literal_value "{{ crf.admissionLabResults_CRP_value }}"^^xsd:float;
+          {%- if crf.admissionLabResults_CRP_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ crf.admissionLabResults_CRP_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif crf.admissionLabResults_CRP == crf.admissionLabResults_CRP_notdone %}
         obo:BFO_0000051 [
@@ -1763,6 +1857,9 @@
         obo:BFO_0000051 [
           a vodan:LDH ;
           vodan:has_literal_value "{{ crf.admissionLabResults_LDH_value }}"^^xsd:float;
+          {%- if crf.admissionLabResults_LDH_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ crf.admissionLabResults_LDH_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif crf.admissionLabResults_LDH == crf.admissionLabResults_LDH_notdone %}
         obo:BFO_0000051 [
@@ -1774,6 +1871,9 @@
         obo:BFO_0000051 [
           a vodan:Creatine_kinase ;
           vodan:has_literal_value "{{ crf.admissionLabResults_Creatine_value }}"^^xsd:float;
+          {%- if crf.admissionLabResults_Creatine_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ crf.admissionLabResults_Creatine_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif crf.admissionLabResults_Creatine == crf.admissionLabResults_Creatine_notdone %}
         obo:BFO_0000051 [
@@ -1785,6 +1885,9 @@
         obo:BFO_0000051 [
           a vodan:Troponin ;
           vodan:has_literal_value "{{ crf.admissionLabResults_Troponin_value }}"^^xsd:float;
+          {%- if crf.admissionLabResults_Troponin_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ crf.admissionLabResults_Troponin_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif crf.admissionLabResults_Troponin == crf.admissionLabResults_Troponin_notdone %}
         obo:BFO_0000051 [
@@ -1796,6 +1899,9 @@
         obo:BFO_0000051 [
           a vodan:ESR ;
           vodan:has_literal_value "{{ crf.admissionLabResults_ESR_value }}"^^xsd:float;
+          {%- if crf.admissionLabResults_ESR_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ crf.admissionLabResults_ESR_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif crf.admissionLabResults_ESR == crf.admissionLabResults_ESR_notdone %}
         obo:BFO_0000051 [
@@ -1807,6 +1913,9 @@
         obo:BFO_0000051 [
           a vodan:D-dimer ;
           vodan:has_literal_value "{{ crf.admissionLabResults_Ddimer_value }}"^^xsd:float;
+          {%- if crf.admissionLabResults_Ddimer_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ crf.admissionLabResults_Ddimer_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif crf.admissionLabResults_Ddimer == crf.admissionLabResults_Ddimer_notdone %}
         obo:BFO_0000051 [
@@ -1818,6 +1927,9 @@
         obo:BFO_0000051 [
           a vodan:Ferritin ;
           vodan:has_literal_value "{{ crf.admissionLabResults_Ferritin_value }}"^^xsd:float;
+          {%- if crf.admissionLabResults_Ferritin_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ crf.admissionLabResults_Ferritin_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif crf.admissionLabResults_Ferritin == crf.admissionLabResults_Ferritin_notdone %}
         obo:BFO_0000051 [
@@ -1829,6 +1941,9 @@
         obo:BFO_0000051 [
           a vodan:IL-6 ;
           vodan:has_literal_value "{{ crf.admissionLabResults_IL6_value }}"^^xsd:float;
+          {%- if crf.admissionLabResults_IL6_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ crf.admissionLabResults_IL6_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif crf.admissionLabResults_IL6 == crf.admissionLabResults_IL6_notdone %}
         obo:BFO_0000051 [
@@ -2289,6 +2404,9 @@
         obo:BFO_0000051 [
           a vodan:Haemoglobin ;
           vodan:has_literal_value "{{ followupLabResults_Haemoglobin_value }}"^^xsd:float;
+          {%- if followupLabResults_Haemoglobin_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ followupLabResults_Haemoglobin_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif followupLabResults_Haemoglobin == crf.followupLabResults_Haemoglobin_notdone %}
         obo:BFO_0000051 [
@@ -2307,6 +2425,9 @@
         obo:BFO_0000051 [
           a vodan:WBC_count ;
           vodan:has_literal_value "{{ followupLabResults_WBC_value }}"^^xsd:float;
+          {%- if followupLabResults_WBC_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ followupLabResults_WBC_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif followupLabResults_WBC == crf.followupLabResults_WBC_notdone %}
         obo:BFO_0000051 [
@@ -2325,6 +2446,9 @@
         obo:BFO_0000051 [
           a vodan:Haematocrit ;
           vodan:has_literal_value "{{ followupLabResults_Haematocrit_value }}"^^xsd:float;
+          {%- if followupLabResults_Haematocrit_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ followupLabResults_Haematocrit_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif followupLabResults_Haematocrit == crf.followupLabResults_Haematocrit_notdone %}
         obo:BFO_0000051 [
@@ -2343,6 +2467,9 @@
         obo:BFO_0000051 [
           a vodan:Platelets ;
           vodan:has_literal_value "{{ followupLabResults_Platelets_value }}"^^xsd:float;
+          {%- if followupLabResults_Platelets_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ followupLabResults_Platelets_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif followupLabResults_Platelets == crf.followupLabResults_Platelets_notdone %}
         obo:BFO_0000051 [
@@ -2361,6 +2488,9 @@
         obo:BFO_0000051 [
           a vodan:APTT_APTR ;
           vodan:has_literal_value "{{ followupLabResults_APTT_value }}"^^xsd:float;
+          {%- if followupLabResults_APTT_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ followupLabResults_APTT_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif followupLabResults_APTT == crf.followupLabResults_APTT_notdone %}
         obo:BFO_0000051 [
@@ -2379,6 +2509,9 @@
         obo:BFO_0000051 [
           a vodan:PT ;
           vodan:has_literal_value "{{ followupLabResults_PT_value }}"^^xsd:float;
+          {%- if followupLabResults_PT_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ followupLabResults_PT_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif followupLabResults_PT == crf.followupLabResults_PT_notdone %}
         obo:BFO_0000051 [
@@ -2397,6 +2530,9 @@
         obo:BFO_0000051 [
           a vodan:INR ;
           vodan:has_literal_value "{{ followupLabResults_INR_value }}"^^xsd:float;
+          {%- if followupLabResults_INR_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ followupLabResults_INR_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif followupLabResults_INR == crf.followupLabResults_INR_notdone %}
         obo:BFO_0000051 [
@@ -2415,6 +2551,9 @@
         obo:BFO_0000051 [
           a vodan:ALT_SGPT ;
           vodan:has_literal_value "{{ followupLabResults_ALT_value }}"^^xsd:float;
+          {%- if followupLabResults_ALT_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ followupLabResults_ALT_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif followupLabResults_ALT == crf.followupLabResults_ALT_notdone %}
         obo:BFO_0000051 [
@@ -2433,6 +2572,9 @@
         obo:BFO_0000051 [
           a vodan:Total_bilirubin ;
           vodan:has_literal_value "{{ followupLabResults_Bilirubin_value }}"^^xsd:float;
+          {%- if followupLabResults_Bilirubin_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ followupLabResults_Bilirubin_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif followupLabResults_Bilirubin == crf.followupLabResults_Bilirubin_notdone %}
         obo:BFO_0000051 [
@@ -2451,6 +2593,9 @@
         obo:BFO_0000051 [
           a vodan:AST_SGOT ;
           vodan:has_literal_value "{{ followupLabResults_AST_value }}"^^xsd:float;
+          {%- if followupLabResults_AST_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ followupLabResults_AST_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif followupLabResults_AST == crf.followupLabResults_AST_notdone %}
         obo:BFO_0000051 [
@@ -2469,6 +2614,9 @@
         obo:BFO_0000051 [
           a vodan:Urea_(BUN) ;
           vodan:has_literal_value "{{ followupLabResults_Urea_value }}"^^xsd:float;
+          {%- if followupLabResults_Urea_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ followupLabResults_Urea_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif followupLabResults_Urea == crf.followupLabResults_Urea_notdone %}
         obo:BFO_0000051 [
@@ -2487,6 +2635,9 @@
         obo:BFO_0000051 [
           a vodan:Lactate ;
           vodan:has_literal_value "{{ followupLabResults_Lactate_value }}"^^xsd:float;
+          {%- if followupLabResults_Lactate_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ followupLabResults_Lactate_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif followupLabResults_Lactate == crf.followupLabResults_Lactate_notdone %}
         obo:BFO_0000051 [
@@ -2505,6 +2656,9 @@
         obo:BFO_0000051 [
           a vodan:Creatinine ;
           vodan:has_literal_value "{{ followupLabResults_Creatinine_value }}"^^xsd:float;
+          {%- if followupLabResults_Creatinine_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ followupLabResults_Creatinine_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif followupLabResults_Creatinine == crf.followupLabResults_Creatinine_notdone %}
         obo:BFO_0000051 [
@@ -2523,6 +2677,9 @@
         obo:BFO_0000051 [
           a vodan:Sodium ;
           vodan:has_literal_value "{{ followupLabResults_Sodium_value }}"^^xsd:float;
+          {%- if followupLabResults_Sodium_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ followupLabResults_Sodium_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif followupLabResults_Sodium == crf.followupLabResults_Sodium_notdone %}
         obo:BFO_0000051 [
@@ -2541,6 +2698,9 @@
         obo:BFO_0000051 [
           a vodan:Potassium ;
           vodan:has_literal_value "{{ followupLabResults_Potassium_value }}"^^xsd:float;
+          {%- if followupLabResults_Potassium_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ followupLabResults_Potassium_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif followupLabResults_Potassium == crf.followupLabResults_Potassium_notdone %}
         obo:BFO_0000051 [
@@ -2559,6 +2719,9 @@
         obo:BFO_0000051 [
           a vodan:Procalcitonin ;
           vodan:has_literal_value "{{ followupLabResults_Procalcitonin_value }}"^^xsd:float;
+          {%- if followupLabResults_Procalcitonin_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ followupLabResults_Procalcitonin_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif followupLabResults_Procalcitonin == crf.followupLabResults_Procalcitonin_notdone %}
         obo:BFO_0000051 [
@@ -2577,6 +2740,9 @@
         obo:BFO_0000051 [
           a vodan:CRP ;
           vodan:has_literal_value "{{ followupLabResults_CRP_value }}"^^xsd:float;
+          {%- if followupLabResults_CRP_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ followupLabResults_CRP_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif followupLabResults_CRP == crf.followupLabResults_CRP_notdone %}
         obo:BFO_0000051 [
@@ -2595,6 +2761,9 @@
         obo:BFO_0000051 [
           a vodan:LDH ;
           vodan:has_literal_value "{{ followupLabResults_LDH_value }}"^^xsd:float;
+          {%- if followupLabResults_LDH_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ followupLabResults_LDH_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif followupLabResults_LDH == crf.followupLabResults_LDH_notdone %}
         obo:BFO_0000051 [
@@ -2613,6 +2782,9 @@
         obo:BFO_0000051 [
           a vodan:Creatine_kinase ;
           vodan:has_literal_value "{{ followupLabResults_Creatine_value }}"^^xsd:float;
+          {%- if followupLabResults_Creatine_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ followupLabResults_Creatine_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif followupLabResults_Creatine == crf.followupLabResults_Creatine_notdone %}
         obo:BFO_0000051 [
@@ -2631,6 +2803,9 @@
         obo:BFO_0000051 [
           a vodan:Troponin ;
           vodan:has_literal_value "{{ followupLabResults_Troponin_value }}"^^xsd:float;
+          {%- if followupLabResults_Troponin_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ followupLabResults_Troponin_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif followupLabResults_Troponin == crf.followupLabResults_Troponin_notdone %}
         obo:BFO_0000051 [
@@ -2649,6 +2824,9 @@
         obo:BFO_0000051 [
           a vodan:ESR ;
           vodan:has_literal_value "{{ followupLabResults_ESR_value }}"^^xsd:float;
+          {%- if followupLabResults_ESR_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ followupLabResults_ESR_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif followupLabResults_ESR == crf.followupLabResults_ESR_notdone %}
         obo:BFO_0000051 [
@@ -2667,6 +2845,9 @@
         obo:BFO_0000051 [
           a vodan:D-dimer ;
           vodan:has_literal_value "{{ followupLabResults_Ddimer_value }}"^^xsd:float;
+          {%- if followupLabResults_Ddimer_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ followupLabResults_Ddimer_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif followupLabResults_Ddimer == crf.followupLabResults_Ddimer_notdone %}
         obo:BFO_0000051 [
@@ -2685,6 +2866,9 @@
         obo:BFO_0000051 [
           a vodan:Ferritin ;
           vodan:has_literal_value "{{ followupLabResults_Ferritin_value }}"^^xsd:float;
+          {%- if followupLabResults_Ferritin_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ followupLabResults_Ferritin_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif followupLabResults_Ferritin == crf.followupLabResults_Ferritin_notdone %}
         obo:BFO_0000051 [
@@ -2703,6 +2887,9 @@
         obo:BFO_0000051 [
           a vodan:IL-6 ;
           vodan:has_literal_value "{{ followupLabResults_IL6_value }}"^^xsd:float;
+          {%- if followupLabResults_IL6_units|length > 0 %}
+          vodan:has_other_measurement_unit_label "{{ followupLabResults_IL6_units }}" ;
+          {%- endif %}
         ] ;
         {%- elif followupLabResults_IL6 == crf.followupLabResults_IL6_notdone %}
         obo:BFO_0000051 [
@@ -2902,7 +3089,6 @@
         obo:BFO_0000051 [
           a vodan:Antifungal_agent ;
           vodan:has_value vodan_inst:C49488 ;  # YES
-          {#- TODO: No antifungal agent #}
         ] ;
         {%- elif followupMedicationAntifungal == crf.followupMedicationAntifungal_no %}
         obo:BFO_0000051 [
@@ -3180,7 +3366,7 @@
           {%- elif followupCareOxygenInterface == crf.followupCareOxygenInterface_CPAP %}
           obo:BFO_0000051 [
             a vodan:Oxygen_interface ;
-            vodan:has_value vodan:CPAP/NIV_Mask ; {#- TODO: will this work? #}
+            vodan:has_value vodan:CPAP_NIV_Mask ;
           ] ;
           {%- elif followupCareOxygenInterface == crf.followupCareOxygenInterface_Unknown %}
           obo:BFO_0000051 [
@@ -3493,7 +3679,26 @@
             vodan:has_value vodan_inst:Not_done ;
           ] ;
           {%- endif %}
-          {# TODO: Other pathogen PHI detected #}
+          {%- if crf.pathogenTestDoneOtherPHI == crf.pathogenTestDoneOtherPHI_Positive %}
+          obo:BFO_0000051 [
+            a vodan:Other_pathogen_of_public_health_interest_detected ;
+            vodan:has_value vodan_inst:Positive ;
+          ] ;
+          obo:BFO_0000051 [
+            a vodan:Which_other_pathogen ;
+            vodan:has_literal_value "{{ crf.pathogenTestDoneOtherPHI_Positive_Specify }}" ;
+          ] ;
+          {%- elif crf.pathogenTestDoneOtherPHI == crf.pathogenTestDoneOtherPHI_Negative %}
+          obo:BFO_0000051 [
+            a vodan:Other_pathogen_of_public_health_interest_detected ;
+            vodan:has_value vodan_inst:Negative ;
+          ] ;
+          {%- elif crf.pathogenTestDoneOtherPHI == crf.pathogenTestDoneOtherPHI_NotDone %}
+          obo:BFO_0000051 [
+            a vodan:Other_pathogen_of_public_health_interest_detected ;
+            vodan:has_value vodan_inst:Not_done ;
+          ] ;
+          {%- endif %}
           {%- if crf.pathogenTestDoneFalciparum == crf.pathogenTestDoneFalciparum_Positive %}
           obo:BFO_0000051 [
             a vodan:Falciparum_malaria ;
@@ -4008,7 +4213,10 @@
         obo:BFO_0000051 [
           a vodan:Antibiotic ;
           vodan:has_value vodan_inst:C49488 ;  # YES
-          {#- TODO: Specify #}
+          obo:BFO_0000051 [
+            a vodan:Which_antibiotic ;
+            vodan:has_literal_value "{{ crf.dischargeMedicationAntibiotic_Specify }}" ;
+          ] ;
         ] ;
         {%- elif crf.dischargeMedicationAntibiotic == crf.dischargeMedicationAntibiotic_no %}
         obo:BFO_0000051 [
@@ -4217,7 +4425,7 @@
           {%- elif crf.dischargeCareOxygenInterface == crf.dischargeCareOxygenInterface_CPAP %}
           obo:BFO_0000051 [
             a vodan:Oxygen_interface ;
-            vodan:has_value vodan:CPAP/NIV_Mask ; {#- TODO: will this work? #}
+            vodan:has_value vodan:CPAP_NIV_Mask ;
           ] ;
           {%- endif %}
         ] ;

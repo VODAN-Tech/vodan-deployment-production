@@ -6,9 +6,15 @@
 {#- Site name [value-string] -#}
 {%- set siteName__path = "49c8091d-e0aa-45e6-8615-b09bf2fb6e81.cdb4f65b-67e0-4293-affc-2ff0531a38af" -%}
 {%- set siteName = repliesMap[siteName__path]|reply_str_value -%}
-{#- Country [value-string] -#}
+{#- Country [value-string] (by hand integration) -#}
 {%- set country__path = "49c8091d-e0aa-45e6-8615-b09bf2fb6e81.0b04e2c8-f721-46d0-a352-a226e1cf3ff5" -%}
-{%- set country = repliesMap[country__path]|reply_str_value -%}
+{%- set country__reply = repliesMap[country__path] -%}
+{%- set country__uri = "" -%}
+{%- if country__reply and country__reply.value.value.type == "IntegrationValue" -%}
+  {%- set country__uri = country__reply.value.value.id -%}
+{%- elif country__reply -%}
+  {%- set country__uri = country__reply.value.value.value -%}
+{%- endif -%}
 {#- Date of enrolment [value-date] -#}
 {%- set enrolmentDate__path = "49c8091d-e0aa-45e6-8615-b09bf2fb6e81.334a2d12-e88d-435c-8a46-2e0d56d74ab5" -%}
 {%- set enrolmentDate = repliesMap[enrolmentDate__path]|reply_str_value -%}
