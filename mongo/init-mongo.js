@@ -29,8 +29,8 @@ db.getCollection('appConfigs').insert(
         "welcomeInfo" : null
     },
     "lookAndFeel" : {
-        "appTitle" : null,
-        "appTitleShort" : null,
+        "appTitle" : "CRF Wizard",
+        "appTitleShort" : "CRF Wizard",
         "customMenuLinks" : [],
         "loginInfo" : null
     },
