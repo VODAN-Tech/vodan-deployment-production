@@ -74,7 +74,9 @@ db.getCollection('appConfigs').insert(
                 ],
                 "request" : {
                     "method" : "POST",
-                    "url" : "https://fdp.vodan.fairdatapoint.org/",
+                    // (!) change to tripleStoreUrl
+                    // "url" : "<triple-store-url>",
+                    "url" : "https://store.vodan.fairdatapoint.org/",
                     "headers" : {
                         "Authorization" : "Bearer a274793046e34a219fd0ea6362fcca61a001500b71724f4c973a017031653c20"
                     },
