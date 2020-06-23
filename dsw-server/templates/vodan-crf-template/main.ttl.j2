@@ -6,9 +6,9 @@
 @prefix vodan_inst: <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/> .
 @prefix vodan_avpu: <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/avpu-list/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
-# Using VODAN ontology 1.1.2
+# Using VODAN ontology 1.1.3
 
-<>  a vodan:who-covid-19-rapid-crf ;
+<{{ ctx.config.clientUrl }}/crfs/detail/{{ ctx.questionnaireUuid }}> a vodan:who-covid-19-rapid-crf ;
     {#- MODULE 1 #}
     {%- if crf.enrolmentDate|length > 0 %}
     obo:BFO_0000051 [
@@ -620,7 +620,7 @@
           vodan:has_value vodan_inst:C49488 ;  # YES
           obo:BFO_0000051 [
             a vodan:Which_antiviral ;
-            vodan:has_value vodan:Chloroquine/hydroxychloroquine ; {# TODO #}
+            vodan:has_value vodan:Chloroquine_hydroxychloroquine ;
           ] ;
         ] ;
         {%- elif crf.preadmissionAntiviral == crf.preadmissionAntiviral_Azithromycin %}
