@@ -89,7 +89,7 @@ db.getCollection('appConfigs').insert(
         ]
     },
     "template" : {
-        "recommendedTemplateUuid" : null
+        "recommendedTemplateUuid" : "ccf5ce08-c932-4e11-a5fd-c52378a86c20"
     }
 })
 
