@@ -1,0 +1,8 @@
+triple-store:
+  # (!) SPARQL endpoint to store data (using INSERT DATA)
+  sparql-endpoint:
+
+fdp:
+  token: a274793046e34a219fd0ea6362fcca61a001500b71724f4c973a017031653c20
+  # (!) Related distribution URL (or comment out)
+  distribution: 
