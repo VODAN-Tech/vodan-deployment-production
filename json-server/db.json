@@ -1,1726 +1,1369 @@
 {
   "countries": [
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#ad",
-      "abbr": "ad",
-      "name": "Andorra",
-      "title": "AD - Andorra",
-      "emoji_title": "AD - Andorra \ud83c\udde6\ud83c\udde9"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#ae",
-      "abbr": "ae",
-      "name": "United Arab Emirates",
-      "title": "AE - United Arab Emirates",
-      "emoji_title": "AE - United Arab Emirates \ud83c\udde6\ud83c\uddea"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#af",
-      "abbr": "af",
+      "uri": "http://www.wikidata.org/entity/Q889",
+      "code": "AFG",
       "name": "Afghanistan",
-      "title": "AF - Afghanistan",
-      "emoji_title": "AF - Afghanistan \ud83c\udde6\ud83c\uddeb"
+      "title": "AFG - Afghanistan",
+      "emoji_title": "AFG - Afghanistan \ud83c\udde6\ud83c\uddeb"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#ag",
-      "abbr": "ag",
-      "name": "Antigua and Barbuda",
-      "title": "AG - Antigua and Barbuda",
-      "emoji_title": "AG - Antigua and Barbuda \ud83c\udde6\ud83c\uddec"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#ai",
-      "abbr": "ai",
-      "name": "Anguilla",
-      "title": "AI - Anguilla",
-      "emoji_title": "AI - Anguilla \ud83c\udde6\ud83c\uddee"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#al",
-      "abbr": "al",
-      "name": "Albania",
-      "title": "AL - Albania",
-      "emoji_title": "AL - Albania \ud83c\udde6\ud83c\uddf1"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#am",
-      "abbr": "am",
-      "name": "Armenia",
-      "title": "AM - Armenia",
-      "emoji_title": "AM - Armenia \ud83c\udde6\ud83c\uddf2"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#an",
-      "abbr": "an",
-      "name": "Netherlands Antilles",
-      "title": "AN - Netherlands Antilles",
-      "emoji_title": "AN - Netherlands Antilles "
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#ao",
-      "abbr": "ao",
+      "uri": "http://www.wikidata.org/entity/Q916",
+      "code": "AGO",
       "name": "Angola",
-      "title": "AO - Angola",
-      "emoji_title": "AO - Angola \ud83c\udde6\ud83c\uddf4"
+      "title": "AGO - Angola",
+      "emoji_title": "AGO - Angola \ud83c\udde6\ud83c\uddf4"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#aq",
-      "abbr": "aq",
-      "name": "Antarctica",
-      "title": "AQ - Antarctica",
-      "emoji_title": "AQ - Antarctica \ud83c\udde6\ud83c\uddf6"
+      "uri": "http://www.wikidata.org/entity/Q222",
+      "code": "ALB",
+      "name": "Albania",
+      "title": "ALB - Albania",
+      "emoji_title": "ALB - Albania \ud83c\udde6\ud83c\uddf1"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#ar",
-      "abbr": "ar",
+      "uri": "http://www.wikidata.org/entity/Q228",
+      "code": "AND",
+      "name": "Andorra",
+      "title": "AND - Andorra",
+      "emoji_title": "AND - Andorra \ud83c\udde6\ud83c\udde9"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q878",
+      "code": "ARE",
+      "name": "United Arab Emirates",
+      "title": "ARE - United Arab Emirates",
+      "emoji_title": "ARE - United Arab Emirates \ud83c\udde6\ud83c\uddea"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q414",
+      "code": "ARG",
       "name": "Argentina",
-      "title": "AR - Argentina",
-      "emoji_title": "AR - Argentina \ud83c\udde6\ud83c\uddf7"
+      "title": "ARG - Argentina",
+      "emoji_title": "ARG - Argentina \ud83c\udde6\ud83c\uddf7"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#as",
-      "abbr": "as",
-      "name": "American Samoa",
-      "title": "AS - American Samoa",
-      "emoji_title": "AS - American Samoa \ud83c\udde6\ud83c\uddf8"
+      "uri": "http://www.wikidata.org/entity/Q399",
+      "code": "ARM",
+      "name": "Armenia",
+      "title": "ARM - Armenia",
+      "emoji_title": "ARM - Armenia \ud83c\udde6\ud83c\uddf2"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#at",
-      "abbr": "at",
-      "name": "Austria",
-      "title": "AT - Austria",
-      "emoji_title": "AT - Austria \ud83c\udde6\ud83c\uddf9"
+      "uri": "http://www.wikidata.org/entity/Q781",
+      "code": "ATG",
+      "name": "Antigua and Barbuda",
+      "title": "ATG - Antigua and Barbuda",
+      "emoji_title": "ATG - Antigua and Barbuda \ud83c\udde6\ud83c\uddec"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#au",
-      "abbr": "au",
+      "uri": "http://www.wikidata.org/entity/Q408",
+      "code": "AUS",
       "name": "Australia",
-      "title": "AU - Australia",
-      "emoji_title": "AU - Australia \ud83c\udde6\ud83c\uddfa"
+      "title": "AUS - Australia",
+      "emoji_title": "AUS - Australia \ud83c\udde6\ud83c\uddfa"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#aw",
-      "abbr": "aw",
-      "name": "Aruba",
-      "title": "AW - Aruba",
-      "emoji_title": "AW - Aruba \ud83c\udde6\ud83c\uddfc"
+      "uri": "http://www.wikidata.org/entity/Q40",
+      "code": "AUT",
+      "name": "Austria",
+      "title": "AUT - Austria",
+      "emoji_title": "AUT - Austria \ud83c\udde6\ud83c\uddf9"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#ax",
-      "abbr": "ax",
-      "name": "Aland Islands",
-      "title": "AX - Aland Islands",
-      "emoji_title": "AX - Aland Islands \ud83c\udde6\ud83c\uddfd"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#az",
-      "abbr": "az",
+      "uri": "http://www.wikidata.org/entity/Q227",
+      "code": "AZE",
       "name": "Azerbaijan",
-      "title": "AZ - Azerbaijan",
-      "emoji_title": "AZ - Azerbaijan \ud83c\udde6\ud83c\uddff"
+      "title": "AZE - Azerbaijan",
+      "emoji_title": "AZE - Azerbaijan \ud83c\udde6\ud83c\uddff"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#ba",
-      "abbr": "ba",
-      "name": "Bosnia and Herzegovina",
-      "title": "BA - Bosnia and Herzegovina",
-      "emoji_title": "BA - Bosnia and Herzegovina \ud83c\udde7\ud83c\udde6"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#bb",
-      "abbr": "bb",
-      "name": "Barbados",
-      "title": "BB - Barbados",
-      "emoji_title": "BB - Barbados \ud83c\udde7\ud83c\udde7"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#bd",
-      "abbr": "bd",
-      "name": "Bangladesh",
-      "title": "BD - Bangladesh",
-      "emoji_title": "BD - Bangladesh \ud83c\udde7\ud83c\udde9"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#be",
-      "abbr": "be",
-      "name": "Belgium",
-      "title": "BE - Belgium",
-      "emoji_title": "BE - Belgium \ud83c\udde7\ud83c\uddea"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#bf",
-      "abbr": "bf",
-      "name": "Burkina Faso",
-      "title": "BF - Burkina Faso",
-      "emoji_title": "BF - Burkina Faso \ud83c\udde7\ud83c\uddeb"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#bg",
-      "abbr": "bg",
-      "name": "Bulgaria",
-      "title": "BG - Bulgaria",
-      "emoji_title": "BG - Bulgaria \ud83c\udde7\ud83c\uddec"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#bh",
-      "abbr": "bh",
-      "name": "Bahrain",
-      "title": "BH - Bahrain",
-      "emoji_title": "BH - Bahrain \ud83c\udde7\ud83c\udded"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#bi",
-      "abbr": "bi",
+      "uri": "http://www.wikidata.org/entity/Q967",
+      "code": "BDI",
       "name": "Burundi",
-      "title": "BI - Burundi",
-      "emoji_title": "BI - Burundi \ud83c\udde7\ud83c\uddee"
+      "title": "BDI - Burundi",
+      "emoji_title": "BDI - Burundi \ud83c\udde7\ud83c\uddee"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#bj",
-      "abbr": "bj",
+      "uri": "http://www.wikidata.org/entity/Q31",
+      "code": "BEL",
+      "name": "Belgium",
+      "title": "BEL - Belgium",
+      "emoji_title": "BEL - Belgium \ud83c\udde7\ud83c\uddea"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q962",
+      "code": "BEN",
       "name": "Benin",
-      "title": "BJ - Benin",
-      "emoji_title": "BJ - Benin \ud83c\udde7\ud83c\uddef"
+      "title": "BEN - Benin",
+      "emoji_title": "BEN - Benin \ud83c\udde7\ud83c\uddef"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#bl",
-      "abbr": "bl",
-      "name": "Saint Barth\u00e9lemy",
-      "title": "BL - Saint Barth\u00e9lemy",
-      "emoji_title": "BL - Saint Barth\u00e9lemy \ud83c\udde7\ud83c\uddf1"
+      "uri": "http://www.wikidata.org/entity/Q965",
+      "code": "BFA",
+      "name": "Burkina Faso",
+      "title": "BFA - Burkina Faso",
+      "emoji_title": "BFA - Burkina Faso \ud83c\udde7\ud83c\uddeb"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#bm",
-      "abbr": "bm",
-      "name": "Bermuda",
-      "title": "BM - Bermuda",
-      "emoji_title": "BM - Bermuda \ud83c\udde7\ud83c\uddf2"
+      "uri": "http://www.wikidata.org/entity/Q902",
+      "code": "BGD",
+      "name": "Bangladesh",
+      "title": "BGD - Bangladesh",
+      "emoji_title": "BGD - Bangladesh \ud83c\udde7\ud83c\udde9"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#bn",
-      "abbr": "bn",
-      "name": "Brunei Darussalam",
-      "title": "BN - Brunei Darussalam",
-      "emoji_title": "BN - Brunei Darussalam \ud83c\udde7\ud83c\uddf3"
+      "uri": "http://www.wikidata.org/entity/Q219",
+      "code": "BGR",
+      "name": "Bulgaria",
+      "title": "BGR - Bulgaria",
+      "emoji_title": "BGR - Bulgaria \ud83c\udde7\ud83c\uddec"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#bo",
-      "abbr": "bo",
-      "name": "Bolivia, Plurinational State of",
-      "title": "BO - Bolivia, Plurinational State of",
-      "emoji_title": "BO - Bolivia, Plurinational State of \ud83c\udde7\ud83c\uddf4"
+      "uri": "http://www.wikidata.org/entity/Q398",
+      "code": "BHR",
+      "name": "Bahrain",
+      "title": "BHR - Bahrain",
+      "emoji_title": "BHR - Bahrain \ud83c\udde7\ud83c\udded"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#br",
-      "abbr": "br",
-      "name": "Brazil",
-      "title": "BR - Brazil",
-      "emoji_title": "BR - Brazil \ud83c\udde7\ud83c\uddf7"
+      "uri": "http://www.wikidata.org/entity/Q778",
+      "code": "BHS",
+      "name": "The Bahamas",
+      "title": "BHS - The Bahamas",
+      "emoji_title": "BHS - The Bahamas \ud83c\udde7\ud83c\uddf8"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#bs",
-      "abbr": "bs",
-      "name": "Bahamas",
-      "title": "BS - Bahamas",
-      "emoji_title": "BS - Bahamas \ud83c\udde7\ud83c\uddf8"
+      "uri": "http://www.wikidata.org/entity/Q225",
+      "code": "BIH",
+      "name": "Bosnia and Herzegovina",
+      "title": "BIH - Bosnia and Herzegovina",
+      "emoji_title": "BIH - Bosnia and Herzegovina \ud83c\udde7\ud83c\udde6"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#bt",
-      "abbr": "bt",
-      "name": "Bhutan",
-      "title": "BT - Bhutan",
-      "emoji_title": "BT - Bhutan \ud83c\udde7\ud83c\uddf9"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#bv",
-      "abbr": "bv",
-      "name": "Bouvet Island",
-      "title": "BV - Bouvet Island",
-      "emoji_title": "BV - Bouvet Island \ud83c\udde7\ud83c\uddfb"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#bw",
-      "abbr": "bw",
-      "name": "Botswana",
-      "title": "BW - Botswana",
-      "emoji_title": "BW - Botswana \ud83c\udde7\ud83c\uddfc"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#by",
-      "abbr": "by",
+      "uri": "http://www.wikidata.org/entity/Q184",
+      "code": "BLR",
       "name": "Belarus",
-      "title": "BY - Belarus",
-      "emoji_title": "BY - Belarus \ud83c\udde7\ud83c\uddfe"
+      "title": "BLR - Belarus",
+      "emoji_title": "BLR - Belarus \ud83c\udde7\ud83c\uddfe"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#bz",
-      "abbr": "bz",
+      "uri": "http://www.wikidata.org/entity/Q242",
+      "code": "BLZ",
       "name": "Belize",
-      "title": "BZ - Belize",
-      "emoji_title": "BZ - Belize \ud83c\udde7\ud83c\uddff"
+      "title": "BLZ - Belize",
+      "emoji_title": "BLZ - Belize \ud83c\udde7\ud83c\uddff"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#ca",
-      "abbr": "ca",
-      "name": "Canada",
-      "title": "CA - Canada",
-      "emoji_title": "CA - Canada \ud83c\udde8\ud83c\udde6"
+      "uri": "http://www.wikidata.org/entity/Q750",
+      "code": "BOL",
+      "name": "Bolivia",
+      "title": "BOL - Bolivia",
+      "emoji_title": "BOL - Bolivia \ud83c\udde7\ud83c\uddf4"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#cc",
-      "abbr": "cc",
-      "name": "Cocos (Keeling) Islands",
-      "title": "CC - Cocos (Keeling) Islands",
-      "emoji_title": "CC - Cocos (Keeling) Islands \ud83c\udde8\ud83c\udde8"
+      "uri": "http://www.wikidata.org/entity/Q155",
+      "code": "BRA",
+      "name": "Brazil",
+      "title": "BRA - Brazil",
+      "emoji_title": "BRA - Brazil \ud83c\udde7\ud83c\uddf7"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#cd",
-      "abbr": "cd",
-      "name": "Congo, the Democratic Republic of the",
-      "title": "CD - Congo, the Democratic Republic of the",
-      "emoji_title": "CD - Congo, the Democratic Republic of the \ud83c\udde8\ud83c\udde9"
+      "uri": "http://www.wikidata.org/entity/Q244",
+      "code": "BRB",
+      "name": "Barbados",
+      "title": "BRB - Barbados",
+      "emoji_title": "BRB - Barbados \ud83c\udde7\ud83c\udde7"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#cf",
-      "abbr": "cf",
+      "uri": "http://www.wikidata.org/entity/Q921",
+      "code": "BRN",
+      "name": "Brunei",
+      "title": "BRN - Brunei",
+      "emoji_title": "BRN - Brunei \ud83c\udde7\ud83c\uddf3"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q917",
+      "code": "BTN",
+      "name": "Bhutan",
+      "title": "BTN - Bhutan",
+      "emoji_title": "BTN - Bhutan \ud83c\udde7\ud83c\uddf9"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q963",
+      "code": "BWA",
+      "name": "Botswana",
+      "title": "BWA - Botswana",
+      "emoji_title": "BWA - Botswana \ud83c\udde7\ud83c\uddfc"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q929",
+      "code": "CAF",
       "name": "Central African Republic",
-      "title": "CF - Central African Republic",
-      "emoji_title": "CF - Central African Republic \ud83c\udde8\ud83c\uddeb"
+      "title": "CAF - Central African Republic",
+      "emoji_title": "CAF - Central African Republic \ud83c\udde8\ud83c\uddeb"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#cg",
-      "abbr": "cg",
-      "name": "Congo",
-      "title": "CG - Congo",
-      "emoji_title": "CG - Congo \ud83c\udde8\ud83c\uddec"
+      "uri": "http://www.wikidata.org/entity/Q16",
+      "code": "CAN",
+      "name": "Canada",
+      "title": "CAN - Canada",
+      "emoji_title": "CAN - Canada \ud83c\udde8\ud83c\udde6"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#ch",
-      "abbr": "ch",
+      "uri": "http://www.wikidata.org/entity/Q39",
+      "code": "CHE",
       "name": "Switzerland",
-      "title": "CH - Switzerland",
-      "emoji_title": "CH - Switzerland \ud83c\udde8\ud83c\udded"
+      "title": "CHE - Switzerland",
+      "emoji_title": "CHE - Switzerland \ud83c\udde8\ud83c\udded"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#ci",
-      "abbr": "ci",
-      "name": "Cote d'Ivoire",
-      "title": "CI - Cote d'Ivoire",
-      "emoji_title": "CI - Cote d'Ivoire \ud83c\udde8\ud83c\uddee"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#ck",
-      "abbr": "ck",
-      "name": "Cook Islands",
-      "title": "CK - Cook Islands",
-      "emoji_title": "CK - Cook Islands \ud83c\udde8\ud83c\uddf0"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#cl",
-      "abbr": "cl",
+      "uri": "http://www.wikidata.org/entity/Q298",
+      "code": "CHL",
       "name": "Chile",
-      "title": "CL - Chile",
-      "emoji_title": "CL - Chile \ud83c\udde8\ud83c\uddf1"
+      "title": "CHL - Chile",
+      "emoji_title": "CHL - Chile \ud83c\udde8\ud83c\uddf1"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#cm",
-      "abbr": "cm",
+      "uri": "http://www.wikidata.org/entity/Q148",
+      "code": "CHN",
+      "name": "People's Republic of China",
+      "title": "CHN - People's Republic of China",
+      "emoji_title": "CHN - People's Republic of China \ud83c\udde8\ud83c\uddf3"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q1008",
+      "code": "CIV",
+      "name": "Ivory Coast",
+      "title": "CIV - Ivory Coast",
+      "emoji_title": "CIV - Ivory Coast \ud83c\udde8\ud83c\uddee"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q1009",
+      "code": "CMR",
       "name": "Cameroon",
-      "title": "CM - Cameroon",
-      "emoji_title": "CM - Cameroon \ud83c\udde8\ud83c\uddf2"
+      "title": "CMR - Cameroon",
+      "emoji_title": "CMR - Cameroon \ud83c\udde8\ud83c\uddf2"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#cn",
-      "abbr": "cn",
-      "name": "China",
-      "title": "CN - China",
-      "emoji_title": "CN - China \ud83c\udde8\ud83c\uddf3"
+      "uri": "http://www.wikidata.org/entity/Q974",
+      "code": "COD",
+      "name": "Democratic Republic of the Congo",
+      "title": "COD - Democratic Republic of the Congo",
+      "emoji_title": "COD - Democratic Republic of the Congo \ud83c\udde8\ud83c\udde9"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#co",
-      "abbr": "co",
+      "uri": "http://www.wikidata.org/entity/Q971",
+      "code": "COG",
+      "name": "Republic of the Congo",
+      "title": "COG - Republic of the Congo",
+      "emoji_title": "COG - Republic of the Congo \ud83c\udde8\ud83c\uddec"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q739",
+      "code": "COL",
       "name": "Colombia",
-      "title": "CO - Colombia",
-      "emoji_title": "CO - Colombia \ud83c\udde8\ud83c\uddf4"
+      "title": "COL - Colombia",
+      "emoji_title": "COL - Colombia \ud83c\udde8\ud83c\uddf4"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#cr",
-      "abbr": "cr",
-      "name": "Costa Rica",
-      "title": "CR - Costa Rica",
-      "emoji_title": "CR - Costa Rica \ud83c\udde8\ud83c\uddf7"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#cu",
-      "abbr": "cu",
-      "name": "Cuba",
-      "title": "CU - Cuba",
-      "emoji_title": "CU - Cuba \ud83c\udde8\ud83c\uddfa"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#cv",
-      "abbr": "cv",
-      "name": "Cape Verde",
-      "title": "CV - Cape Verde",
-      "emoji_title": "CV - Cape Verde \ud83c\udde8\ud83c\uddfb"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#cx",
-      "abbr": "cx",
-      "name": "Christmas Island",
-      "title": "CX - Christmas Island",
-      "emoji_title": "CX - Christmas Island \ud83c\udde8\ud83c\uddfd"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#cy",
-      "abbr": "cy",
-      "name": "Cyprus",
-      "title": "CY - Cyprus",
-      "emoji_title": "CY - Cyprus \ud83c\udde8\ud83c\uddfe"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#cz",
-      "abbr": "cz",
-      "name": "Czech Republic",
-      "title": "CZ - Czech Republic",
-      "emoji_title": "CZ - Czech Republic \ud83c\udde8\ud83c\uddff"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#de",
-      "abbr": "de",
-      "name": "Germany",
-      "title": "DE - Germany",
-      "emoji_title": "DE - Germany \ud83c\udde9\ud83c\uddea"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#dj",
-      "abbr": "dj",
-      "name": "Djibouti",
-      "title": "DJ - Djibouti",
-      "emoji_title": "DJ - Djibouti \ud83c\udde9\ud83c\uddef"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#dk",
-      "abbr": "dk",
-      "name": "Denmark",
-      "title": "DK - Denmark",
-      "emoji_title": "DK - Denmark \ud83c\udde9\ud83c\uddf0"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#dm",
-      "abbr": "dm",
-      "name": "Dominica",
-      "title": "DM - Dominica",
-      "emoji_title": "DM - Dominica \ud83c\udde9\ud83c\uddf2"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#do",
-      "abbr": "do",
-      "name": "Dominican Republic",
-      "title": "DO - Dominican Republic",
-      "emoji_title": "DO - Dominican Republic \ud83c\udde9\ud83c\uddf4"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#dz",
-      "abbr": "dz",
-      "name": "Algeria",
-      "title": "DZ - Algeria",
-      "emoji_title": "DZ - Algeria \ud83c\udde9\ud83c\uddff"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#ec",
-      "abbr": "ec",
-      "name": "Ecuador",
-      "title": "EC - Ecuador",
-      "emoji_title": "EC - Ecuador \ud83c\uddea\ud83c\udde8"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#ee",
-      "abbr": "ee",
-      "name": "Estonia",
-      "title": "EE - Estonia",
-      "emoji_title": "EE - Estonia \ud83c\uddea\ud83c\uddea"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#eg",
-      "abbr": "eg",
-      "name": "Egypt",
-      "title": "EG - Egypt",
-      "emoji_title": "EG - Egypt \ud83c\uddea\ud83c\uddec"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#eh",
-      "abbr": "eh",
-      "name": "Western Sahara",
-      "title": "EH - Western Sahara",
-      "emoji_title": "EH - Western Sahara \ud83c\uddea\ud83c\udded"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#er",
-      "abbr": "er",
-      "name": "Eritrea",
-      "title": "ER - Eritrea",
-      "emoji_title": "ER - Eritrea \ud83c\uddea\ud83c\uddf7"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#es",
-      "abbr": "es",
-      "name": "Spain",
-      "title": "ES - Spain",
-      "emoji_title": "ES - Spain \ud83c\uddea\ud83c\uddf8"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#et",
-      "abbr": "et",
-      "name": "Ethiopia",
-      "title": "ET - Ethiopia",
-      "emoji_title": "ET - Ethiopia \ud83c\uddea\ud83c\uddf9"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#fi",
-      "abbr": "fi",
-      "name": "Finland",
-      "title": "FI - Finland",
-      "emoji_title": "FI - Finland \ud83c\uddeb\ud83c\uddee"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#fj",
-      "abbr": "fj",
-      "name": "Fiji",
-      "title": "FJ - Fiji",
-      "emoji_title": "FJ - Fiji \ud83c\uddeb\ud83c\uddef"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#fk",
-      "abbr": "fk",
-      "name": "Falkland Islands (Malvinas)",
-      "title": "FK - Falkland Islands (Malvinas)",
-      "emoji_title": "FK - Falkland Islands (Malvinas) \ud83c\uddeb\ud83c\uddf0"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#fm",
-      "abbr": "fm",
-      "name": "Micronesia, Federated States of",
-      "title": "FM - Micronesia, Federated States of",
-      "emoji_title": "FM - Micronesia, Federated States of \ud83c\uddeb\ud83c\uddf2"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#fo",
-      "abbr": "fo",
-      "name": "Faroe Islands",
-      "title": "FO - Faroe Islands",
-      "emoji_title": "FO - Faroe Islands \ud83c\uddeb\ud83c\uddf4"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#fr",
-      "abbr": "fr",
-      "name": "France",
-      "title": "FR - France",
-      "emoji_title": "FR - France \ud83c\uddeb\ud83c\uddf7"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#ga",
-      "abbr": "ga",
-      "name": "Gabon",
-      "title": "GA - Gabon",
-      "emoji_title": "GA - Gabon \ud83c\uddec\ud83c\udde6"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#gb",
-      "abbr": "gb",
-      "name": "United Kingdom",
-      "title": "GB - United Kingdom",
-      "emoji_title": "GB - United Kingdom \ud83c\uddec\ud83c\udde7"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#gd",
-      "abbr": "gd",
-      "name": "Grenada",
-      "title": "GD - Grenada",
-      "emoji_title": "GD - Grenada \ud83c\uddec\ud83c\udde9"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#ge",
-      "abbr": "ge",
-      "name": "Georgia",
-      "title": "GE - Georgia",
-      "emoji_title": "GE - Georgia \ud83c\uddec\ud83c\uddea"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#gf",
-      "abbr": "gf",
-      "name": "French Guiana",
-      "title": "GF - French Guiana",
-      "emoji_title": "GF - French Guiana \ud83c\uddec\ud83c\uddeb"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#gg",
-      "abbr": "gg",
-      "name": "Guernsey",
-      "title": "GG - Guernsey",
-      "emoji_title": "GG - Guernsey \ud83c\uddec\ud83c\uddec"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#gh",
-      "abbr": "gh",
-      "name": "Ghana",
-      "title": "GH - Ghana",
-      "emoji_title": "GH - Ghana \ud83c\uddec\ud83c\udded"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#gi",
-      "abbr": "gi",
-      "name": "Gibraltar",
-      "title": "GI - Gibraltar",
-      "emoji_title": "GI - Gibraltar \ud83c\uddec\ud83c\uddee"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#gl",
-      "abbr": "gl",
-      "name": "Greenland",
-      "title": "GL - Greenland",
-      "emoji_title": "GL - Greenland \ud83c\uddec\ud83c\uddf1"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#gm",
-      "abbr": "gm",
-      "name": "Gambia",
-      "title": "GM - Gambia",
-      "emoji_title": "GM - Gambia \ud83c\uddec\ud83c\uddf2"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#gn",
-      "abbr": "gn",
-      "name": "Guinea",
-      "title": "GN - Guinea",
-      "emoji_title": "GN - Guinea \ud83c\uddec\ud83c\uddf3"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#gp",
-      "abbr": "gp",
-      "name": "Guadeloupe",
-      "title": "GP - Guadeloupe",
-      "emoji_title": "GP - Guadeloupe \ud83c\uddec\ud83c\uddf5"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#gq",
-      "abbr": "gq",
-      "name": "Equatorial Guinea",
-      "title": "GQ - Equatorial Guinea",
-      "emoji_title": "GQ - Equatorial Guinea \ud83c\uddec\ud83c\uddf6"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#gr",
-      "abbr": "gr",
-      "name": "Greece",
-      "title": "GR - Greece",
-      "emoji_title": "GR - Greece \ud83c\uddec\ud83c\uddf7"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#gs",
-      "abbr": "gs",
-      "name": "South Georgia and the South Sandwich Islands",
-      "title": "GS - South Georgia and the South Sandwich Islands",
-      "emoji_title": "GS - South Georgia and the South Sandwich Islands \ud83c\uddec\ud83c\uddf8"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#gt",
-      "abbr": "gt",
-      "name": "Guatemala",
-      "title": "GT - Guatemala",
-      "emoji_title": "GT - Guatemala \ud83c\uddec\ud83c\uddf9"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#gu",
-      "abbr": "gu",
-      "name": "Guam",
-      "title": "GU - Guam",
-      "emoji_title": "GU - Guam \ud83c\uddec\ud83c\uddfa"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#gw",
-      "abbr": "gw",
-      "name": "Guinea-Bissau",
-      "title": "GW - Guinea-Bissau",
-      "emoji_title": "GW - Guinea-Bissau \ud83c\uddec\ud83c\uddfc"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#gy",
-      "abbr": "gy",
-      "name": "Guyana",
-      "title": "GY - Guyana",
-      "emoji_title": "GY - Guyana \ud83c\uddec\ud83c\uddfe"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#hk",
-      "abbr": "hk",
-      "name": "Hong Kong",
-      "title": "HK - Hong Kong",
-      "emoji_title": "HK - Hong Kong \ud83c\udded\ud83c\uddf0"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#hm",
-      "abbr": "hm",
-      "name": "Heard Island and McDonald Islands",
-      "title": "HM - Heard Island and McDonald Islands",
-      "emoji_title": "HM - Heard Island and McDonald Islands \ud83c\udded\ud83c\uddf2"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#hn",
-      "abbr": "hn",
-      "name": "Honduras",
-      "title": "HN - Honduras",
-      "emoji_title": "HN - Honduras \ud83c\udded\ud83c\uddf3"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#hr",
-      "abbr": "hr",
-      "name": "Croatia",
-      "title": "HR - Croatia",
-      "emoji_title": "HR - Croatia \ud83c\udded\ud83c\uddf7"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#ht",
-      "abbr": "ht",
-      "name": "Haiti",
-      "title": "HT - Haiti",
-      "emoji_title": "HT - Haiti \ud83c\udded\ud83c\uddf9"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#hu",
-      "abbr": "hu",
-      "name": "Hungary",
-      "title": "HU - Hungary",
-      "emoji_title": "HU - Hungary \ud83c\udded\ud83c\uddfa"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#id",
-      "abbr": "id",
-      "name": "Indonesia",
-      "title": "ID - Indonesia",
-      "emoji_title": "ID - Indonesia \ud83c\uddee\ud83c\udde9"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#ie",
-      "abbr": "ie",
-      "name": "Ireland",
-      "title": "IE - Ireland",
-      "emoji_title": "IE - Ireland \ud83c\uddee\ud83c\uddea"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#il",
-      "abbr": "il",
-      "name": "Israel",
-      "title": "IL - Israel",
-      "emoji_title": "IL - Israel \ud83c\uddee\ud83c\uddf1"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#im",
-      "abbr": "im",
-      "name": "Isle of Man",
-      "title": "IM - Isle of Man",
-      "emoji_title": "IM - Isle of Man \ud83c\uddee\ud83c\uddf2"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#in",
-      "abbr": "in",
-      "name": "India",
-      "title": "IN - India",
-      "emoji_title": "IN - India \ud83c\uddee\ud83c\uddf3"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#io",
-      "abbr": "io",
-      "name": "British Indian Ocean Territory",
-      "title": "IO - British Indian Ocean Territory",
-      "emoji_title": "IO - British Indian Ocean Territory \ud83c\uddee\ud83c\uddf4"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#iq",
-      "abbr": "iq",
-      "name": "Iraq",
-      "title": "IQ - Iraq",
-      "emoji_title": "IQ - Iraq \ud83c\uddee\ud83c\uddf6"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#ir",
-      "abbr": "ir",
-      "name": "Iran, Islamic Republic of",
-      "title": "IR - Iran, Islamic Republic of",
-      "emoji_title": "IR - Iran, Islamic Republic of \ud83c\uddee\ud83c\uddf7"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#is",
-      "abbr": "is",
-      "name": "Iceland",
-      "title": "IS - Iceland",
-      "emoji_title": "IS - Iceland \ud83c\uddee\ud83c\uddf8"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#it",
-      "abbr": "it",
-      "name": "Italy",
-      "title": "IT - Italy",
-      "emoji_title": "IT - Italy \ud83c\uddee\ud83c\uddf9"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#je",
-      "abbr": "je",
-      "name": "Jersey",
-      "title": "JE - Jersey",
-      "emoji_title": "JE - Jersey \ud83c\uddef\ud83c\uddea"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#jm",
-      "abbr": "jm",
-      "name": "Jamaica",
-      "title": "JM - Jamaica",
-      "emoji_title": "JM - Jamaica \ud83c\uddef\ud83c\uddf2"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#jo",
-      "abbr": "jo",
-      "name": "Jordan",
-      "title": "JO - Jordan",
-      "emoji_title": "JO - Jordan \ud83c\uddef\ud83c\uddf4"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#jp",
-      "abbr": "jp",
-      "name": "Japan",
-      "title": "JP - Japan",
-      "emoji_title": "JP - Japan \ud83c\uddef\ud83c\uddf5"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#ke",
-      "abbr": "ke",
-      "name": "Kenya",
-      "title": "KE - Kenya",
-      "emoji_title": "KE - Kenya \ud83c\uddf0\ud83c\uddea"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#kg",
-      "abbr": "kg",
-      "name": "Kyrgyzstan",
-      "title": "KG - Kyrgyzstan",
-      "emoji_title": "KG - Kyrgyzstan \ud83c\uddf0\ud83c\uddec"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#kh",
-      "abbr": "kh",
-      "name": "Cambodia",
-      "title": "KH - Cambodia",
-      "emoji_title": "KH - Cambodia \ud83c\uddf0\ud83c\udded"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#ki",
-      "abbr": "ki",
-      "name": "Kiribati",
-      "title": "KI - Kiribati",
-      "emoji_title": "KI - Kiribati \ud83c\uddf0\ud83c\uddee"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#km",
-      "abbr": "km",
+      "uri": "http://www.wikidata.org/entity/Q970",
+      "code": "COM",
       "name": "Comoros",
-      "title": "KM - Comoros",
-      "emoji_title": "KM - Comoros \ud83c\uddf0\ud83c\uddf2"
+      "title": "COM - Comoros",
+      "emoji_title": "COM - Comoros \ud83c\uddf0\ud83c\uddf2"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#kn",
-      "abbr": "kn",
-      "name": "Saint Kitts and Nevis",
-      "title": "KN - Saint Kitts and Nevis",
-      "emoji_title": "KN - Saint Kitts and Nevis \ud83c\uddf0\ud83c\uddf3"
+      "uri": "http://www.wikidata.org/entity/Q1011",
+      "code": "CPV",
+      "name": "Cape Verde",
+      "title": "CPV - Cape Verde",
+      "emoji_title": "CPV - Cape Verde \ud83c\udde8\ud83c\uddfb"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#kp",
-      "abbr": "kp",
-      "name": "Korea, Democratic People's Republic of",
-      "title": "KP - Korea, Democratic People's Republic of",
-      "emoji_title": "KP - Korea, Democratic People's Republic of \ud83c\uddf0\ud83c\uddf5"
+      "uri": "http://www.wikidata.org/entity/Q800",
+      "code": "CRI",
+      "name": "Costa Rica",
+      "title": "CRI - Costa Rica",
+      "emoji_title": "CRI - Costa Rica \ud83c\udde8\ud83c\uddf7"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#kr",
-      "abbr": "kr",
-      "name": "Korea, Republic of",
-      "title": "KR - Korea, Republic of",
-      "emoji_title": "KR - Korea, Republic of \ud83c\uddf0\ud83c\uddf7"
+      "uri": "http://www.wikidata.org/entity/Q241",
+      "code": "CUB",
+      "name": "Cuba",
+      "title": "CUB - Cuba",
+      "emoji_title": "CUB - Cuba \ud83c\udde8\ud83c\uddfa"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#kw",
-      "abbr": "kw",
-      "name": "Kuwait",
-      "title": "KW - Kuwait",
-      "emoji_title": "KW - Kuwait \ud83c\uddf0\ud83c\uddfc"
+      "uri": "http://www.wikidata.org/entity/Q229",
+      "code": "CYP",
+      "name": "Cyprus",
+      "title": "CYP - Cyprus",
+      "emoji_title": "CYP - Cyprus \ud83c\udde8\ud83c\uddfe"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#ky",
-      "abbr": "ky",
-      "name": "Cayman Islands",
-      "title": "KY - Cayman Islands",
-      "emoji_title": "KY - Cayman Islands \ud83c\uddf0\ud83c\uddfe"
+      "uri": "http://www.wikidata.org/entity/Q213",
+      "code": "CZE",
+      "name": "Czech Republic",
+      "title": "CZE - Czech Republic",
+      "emoji_title": "CZE - Czech Republic \ud83c\udde8\ud83c\uddff"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#kz",
-      "abbr": "kz",
+      "uri": "http://www.wikidata.org/entity/Q183",
+      "code": "DEU",
+      "name": "Germany",
+      "title": "DEU - Germany",
+      "emoji_title": "DEU - Germany \ud83c\udde9\ud83c\uddea"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q977",
+      "code": "DJI",
+      "name": "Djibouti",
+      "title": "DJI - Djibouti",
+      "emoji_title": "DJI - Djibouti \ud83c\udde9\ud83c\uddef"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q784",
+      "code": "DMA",
+      "name": "Dominica",
+      "title": "DMA - Dominica",
+      "emoji_title": "DMA - Dominica \ud83c\udde9\ud83c\uddf2"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q35",
+      "code": "DNK",
+      "name": "Denmark",
+      "title": "DNK - Denmark",
+      "emoji_title": "DNK - Denmark \ud83c\udde9\ud83c\uddf0"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q756617",
+      "code": "DNK",
+      "name": "Kingdom of Denmark",
+      "title": "DNK - Kingdom of Denmark",
+      "emoji_title": "DNK - Kingdom of Denmark \ud83c\udde9\ud83c\uddf0"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q786",
+      "code": "DOM",
+      "name": "Dominican Republic",
+      "title": "DOM - Dominican Republic",
+      "emoji_title": "DOM - Dominican Republic \ud83c\udde9\ud83c\uddf4"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q262",
+      "code": "DZA",
+      "name": "Algeria",
+      "title": "DZA - Algeria",
+      "emoji_title": "DZA - Algeria \ud83c\udde9\ud83c\uddff"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q736",
+      "code": "ECU",
+      "name": "Ecuador",
+      "title": "ECU - Ecuador",
+      "emoji_title": "ECU - Ecuador \ud83c\uddea\ud83c\udde8"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q79",
+      "code": "EGY",
+      "name": "Egypt",
+      "title": "EGY - Egypt",
+      "emoji_title": "EGY - Egypt \ud83c\uddea\ud83c\uddec"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q986",
+      "code": "ERI",
+      "name": "Eritrea",
+      "title": "ERI - Eritrea",
+      "emoji_title": "ERI - Eritrea \ud83c\uddea\ud83c\uddf7"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q29",
+      "code": "ESP",
+      "name": "Spain",
+      "title": "ESP - Spain",
+      "emoji_title": "ESP - Spain \ud83c\uddea\ud83c\uddf8"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q191",
+      "code": "EST",
+      "name": "Estonia",
+      "title": "EST - Estonia",
+      "emoji_title": "EST - Estonia \ud83c\uddea\ud83c\uddea"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q115",
+      "code": "ETH",
+      "name": "Ethiopia",
+      "title": "ETH - Ethiopia",
+      "emoji_title": "ETH - Ethiopia \ud83c\uddea\ud83c\uddf9"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q33",
+      "code": "FIN",
+      "name": "Finland",
+      "title": "FIN - Finland",
+      "emoji_title": "FIN - Finland \ud83c\uddeb\ud83c\uddee"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q712",
+      "code": "FJI",
+      "name": "Fiji",
+      "title": "FJI - Fiji",
+      "emoji_title": "FJI - Fiji \ud83c\uddeb\ud83c\uddef"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q142",
+      "code": "FRA",
+      "name": "France",
+      "title": "FRA - France",
+      "emoji_title": "FRA - France \ud83c\uddeb\ud83c\uddf7"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q702",
+      "code": "FSM",
+      "name": "Federated States of Micronesia",
+      "title": "FSM - Federated States of Micronesia",
+      "emoji_title": "FSM - Federated States of Micronesia \ud83c\uddeb\ud83c\uddf2"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q1000",
+      "code": "GAB",
+      "name": "Gabon",
+      "title": "GAB - Gabon",
+      "emoji_title": "GAB - Gabon \ud83c\uddec\ud83c\udde6"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q145",
+      "code": "GBR",
+      "name": "United Kingdom",
+      "title": "GBR - United Kingdom",
+      "emoji_title": "GBR - United Kingdom \ud83c\uddec\ud83c\udde7"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q230",
+      "code": "GEO",
+      "name": "Georgia",
+      "title": "GEO - Georgia",
+      "emoji_title": "GEO - Georgia \ud83c\uddec\ud83c\uddea"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q117",
+      "code": "GHA",
+      "name": "Ghana",
+      "title": "GHA - Ghana",
+      "emoji_title": "GHA - Ghana \ud83c\uddec\ud83c\udded"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q1006",
+      "code": "GIN",
+      "name": "Guinea",
+      "title": "GIN - Guinea",
+      "emoji_title": "GIN - Guinea \ud83c\uddec\ud83c\uddf3"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q1005",
+      "code": "GMB",
+      "name": "The Gambia",
+      "title": "GMB - The Gambia",
+      "emoji_title": "GMB - The Gambia \ud83c\uddec\ud83c\uddf2"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q1007",
+      "code": "GNB",
+      "name": "Guinea-Bissau",
+      "title": "GNB - Guinea-Bissau",
+      "emoji_title": "GNB - Guinea-Bissau \ud83c\uddec\ud83c\uddfc"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q983",
+      "code": "GNQ",
+      "name": "Equatorial Guinea",
+      "title": "GNQ - Equatorial Guinea",
+      "emoji_title": "GNQ - Equatorial Guinea \ud83c\uddec\ud83c\uddf6"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q41",
+      "code": "GRC",
+      "name": "Greece",
+      "title": "GRC - Greece",
+      "emoji_title": "GRC - Greece \ud83c\uddec\ud83c\uddf7"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q769",
+      "code": "GRD",
+      "name": "Grenada",
+      "title": "GRD - Grenada",
+      "emoji_title": "GRD - Grenada \ud83c\uddec\ud83c\udde9"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q774",
+      "code": "GTM",
+      "name": "Guatemala",
+      "title": "GTM - Guatemala",
+      "emoji_title": "GTM - Guatemala \ud83c\uddec\ud83c\uddf9"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q734",
+      "code": "GUY",
+      "name": "Guyana",
+      "title": "GUY - Guyana",
+      "emoji_title": "GUY - Guyana \ud83c\uddec\ud83c\uddfe"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q783",
+      "code": "HND",
+      "name": "Honduras",
+      "title": "HND - Honduras",
+      "emoji_title": "HND - Honduras \ud83c\udded\ud83c\uddf3"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q224",
+      "code": "HRV",
+      "name": "Croatia",
+      "title": "HRV - Croatia",
+      "emoji_title": "HRV - Croatia \ud83c\udded\ud83c\uddf7"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q790",
+      "code": "HTI",
+      "name": "Haiti",
+      "title": "HTI - Haiti",
+      "emoji_title": "HTI - Haiti \ud83c\udded\ud83c\uddf9"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q28",
+      "code": "HUN",
+      "name": "Hungary",
+      "title": "HUN - Hungary",
+      "emoji_title": "HUN - Hungary \ud83c\udded\ud83c\uddfa"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q252",
+      "code": "IDN",
+      "name": "Indonesia",
+      "title": "IDN - Indonesia",
+      "emoji_title": "IDN - Indonesia \ud83c\uddee\ud83c\udde9"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q668",
+      "code": "IND",
+      "name": "India",
+      "title": "IND - India",
+      "emoji_title": "IND - India \ud83c\uddee\ud83c\uddf3"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q27",
+      "code": "IRL",
+      "name": "Ireland",
+      "title": "IRL - Ireland",
+      "emoji_title": "IRL - Ireland \ud83c\uddee\ud83c\uddea"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q794",
+      "code": "IRN",
+      "name": "Iran",
+      "title": "IRN - Iran",
+      "emoji_title": "IRN - Iran \ud83c\uddee\ud83c\uddf7"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q796",
+      "code": "IRQ",
+      "name": "Iraq",
+      "title": "IRQ - Iraq",
+      "emoji_title": "IRQ - Iraq \ud83c\uddee\ud83c\uddf6"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q189",
+      "code": "ISL",
+      "name": "Iceland",
+      "title": "ISL - Iceland",
+      "emoji_title": "ISL - Iceland \ud83c\uddee\ud83c\uddf8"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q801",
+      "code": "ISR",
+      "name": "Israel",
+      "title": "ISR - Israel",
+      "emoji_title": "ISR - Israel \ud83c\uddee\ud83c\uddf1"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q38",
+      "code": "ITA",
+      "name": "Italy",
+      "title": "ITA - Italy",
+      "emoji_title": "ITA - Italy \ud83c\uddee\ud83c\uddf9"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q766",
+      "code": "JAM",
+      "name": "Jamaica",
+      "title": "JAM - Jamaica",
+      "emoji_title": "JAM - Jamaica \ud83c\uddef\ud83c\uddf2"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q810",
+      "code": "JOR",
+      "name": "Jordan",
+      "title": "JOR - Jordan",
+      "emoji_title": "JOR - Jordan \ud83c\uddef\ud83c\uddf4"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q17",
+      "code": "JPN",
+      "name": "Japan",
+      "title": "JPN - Japan",
+      "emoji_title": "JPN - Japan \ud83c\uddef\ud83c\uddf5"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q232",
+      "code": "KAZ",
       "name": "Kazakhstan",
-      "title": "KZ - Kazakhstan",
-      "emoji_title": "KZ - Kazakhstan \ud83c\uddf0\ud83c\uddff"
+      "title": "KAZ - Kazakhstan",
+      "emoji_title": "KAZ - Kazakhstan \ud83c\uddf0\ud83c\uddff"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#la",
-      "abbr": "la",
-      "name": "Lao People's Democratic Republic",
-      "title": "LA - Lao People's Democratic Republic",
-      "emoji_title": "LA - Lao People's Democratic Republic \ud83c\uddf1\ud83c\udde6"
+      "uri": "http://www.wikidata.org/entity/Q114",
+      "code": "KEN",
+      "name": "Kenya",
+      "title": "KEN - Kenya",
+      "emoji_title": "KEN - Kenya \ud83c\uddf0\ud83c\uddea"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#lb",
-      "abbr": "lb",
+      "uri": "http://www.wikidata.org/entity/Q813",
+      "code": "KGZ",
+      "name": "Kyrgyzstan",
+      "title": "KGZ - Kyrgyzstan",
+      "emoji_title": "KGZ - Kyrgyzstan \ud83c\uddf0\ud83c\uddec"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q424",
+      "code": "KHM",
+      "name": "Cambodia",
+      "title": "KHM - Cambodia",
+      "emoji_title": "KHM - Cambodia \ud83c\uddf0\ud83c\udded"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q710",
+      "code": "KIR",
+      "name": "Kiribati",
+      "title": "KIR - Kiribati",
+      "emoji_title": "KIR - Kiribati \ud83c\uddf0\ud83c\uddee"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q763",
+      "code": "KNA",
+      "name": "Saint Kitts and Nevis",
+      "title": "KNA - Saint Kitts and Nevis",
+      "emoji_title": "KNA - Saint Kitts and Nevis \ud83c\uddf0\ud83c\uddf3"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q884",
+      "code": "KOR",
+      "name": "South Korea",
+      "title": "KOR - South Korea",
+      "emoji_title": "KOR - South Korea \ud83c\uddf0\ud83c\uddf7"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q817",
+      "code": "KWT",
+      "name": "Kuwait",
+      "title": "KWT - Kuwait",
+      "emoji_title": "KWT - Kuwait \ud83c\uddf0\ud83c\uddfc"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q819",
+      "code": "LAO",
+      "name": "Laos",
+      "title": "LAO - Laos",
+      "emoji_title": "LAO - Laos \ud83c\uddf1\ud83c\udde6"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q822",
+      "code": "LBN",
       "name": "Lebanon",
-      "title": "LB - Lebanon",
-      "emoji_title": "LB - Lebanon \ud83c\uddf1\ud83c\udde7"
+      "title": "LBN - Lebanon",
+      "emoji_title": "LBN - Lebanon \ud83c\uddf1\ud83c\udde7"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#lc",
-      "abbr": "lc",
-      "name": "Saint Lucia",
-      "title": "LC - Saint Lucia",
-      "emoji_title": "LC - Saint Lucia \ud83c\uddf1\ud83c\udde8"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#li",
-      "abbr": "li",
-      "name": "Liechtenstein",
-      "title": "LI - Liechtenstein",
-      "emoji_title": "LI - Liechtenstein \ud83c\uddf1\ud83c\uddee"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#lk",
-      "abbr": "lk",
-      "name": "Sri Lanka",
-      "title": "LK - Sri Lanka",
-      "emoji_title": "LK - Sri Lanka \ud83c\uddf1\ud83c\uddf0"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#lr",
-      "abbr": "lr",
+      "uri": "http://www.wikidata.org/entity/Q1014",
+      "code": "LBR",
       "name": "Liberia",
-      "title": "LR - Liberia",
-      "emoji_title": "LR - Liberia \ud83c\uddf1\ud83c\uddf7"
+      "title": "LBR - Liberia",
+      "emoji_title": "LBR - Liberia \ud83c\uddf1\ud83c\uddf7"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#ls",
-      "abbr": "ls",
+      "uri": "http://www.wikidata.org/entity/Q1016",
+      "code": "LBY",
+      "name": "Libya",
+      "title": "LBY - Libya",
+      "emoji_title": "LBY - Libya \ud83c\uddf1\ud83c\uddfe"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q760",
+      "code": "LCA",
+      "name": "Saint Lucia",
+      "title": "LCA - Saint Lucia",
+      "emoji_title": "LCA - Saint Lucia \ud83c\uddf1\ud83c\udde8"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q347",
+      "code": "LIE",
+      "name": "Liechtenstein",
+      "title": "LIE - Liechtenstein",
+      "emoji_title": "LIE - Liechtenstein \ud83c\uddf1\ud83c\uddee"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q854",
+      "code": "LKA",
+      "name": "Sri Lanka",
+      "title": "LKA - Sri Lanka",
+      "emoji_title": "LKA - Sri Lanka \ud83c\uddf1\ud83c\uddf0"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q1013",
+      "code": "LSO",
       "name": "Lesotho",
-      "title": "LS - Lesotho",
-      "emoji_title": "LS - Lesotho \ud83c\uddf1\ud83c\uddf8"
+      "title": "LSO - Lesotho",
+      "emoji_title": "LSO - Lesotho \ud83c\uddf1\ud83c\uddf8"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#lt",
-      "abbr": "lt",
+      "uri": "http://www.wikidata.org/entity/Q37",
+      "code": "LTU",
       "name": "Lithuania",
-      "title": "LT - Lithuania",
-      "emoji_title": "LT - Lithuania \ud83c\uddf1\ud83c\uddf9"
+      "title": "LTU - Lithuania",
+      "emoji_title": "LTU - Lithuania \ud83c\uddf1\ud83c\uddf9"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#lu",
-      "abbr": "lu",
+      "uri": "http://www.wikidata.org/entity/Q32",
+      "code": "LUX",
       "name": "Luxembourg",
-      "title": "LU - Luxembourg",
-      "emoji_title": "LU - Luxembourg \ud83c\uddf1\ud83c\uddfa"
+      "title": "LUX - Luxembourg",
+      "emoji_title": "LUX - Luxembourg \ud83c\uddf1\ud83c\uddfa"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#lv",
-      "abbr": "lv",
+      "uri": "http://www.wikidata.org/entity/Q211",
+      "code": "LVA",
       "name": "Latvia",
-      "title": "LV - Latvia",
-      "emoji_title": "LV - Latvia \ud83c\uddf1\ud83c\uddfb"
+      "title": "LVA - Latvia",
+      "emoji_title": "LVA - Latvia \ud83c\uddf1\ud83c\uddfb"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#ly",
-      "abbr": "ly",
-      "name": "Libyan Arab Jamahiriya",
-      "title": "LY - Libyan Arab Jamahiriya",
-      "emoji_title": "LY - Libyan Arab Jamahiriya \ud83c\uddf1\ud83c\uddfe"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#ma",
-      "abbr": "ma",
+      "uri": "http://www.wikidata.org/entity/Q1028",
+      "code": "MAR",
       "name": "Morocco",
-      "title": "MA - Morocco",
-      "emoji_title": "MA - Morocco \ud83c\uddf2\ud83c\udde6"
+      "title": "MAR - Morocco",
+      "emoji_title": "MAR - Morocco \ud83c\uddf2\ud83c\udde6"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#mc",
-      "abbr": "mc",
+      "uri": "http://www.wikidata.org/entity/Q235",
+      "code": "MCO",
       "name": "Monaco",
-      "title": "MC - Monaco",
-      "emoji_title": "MC - Monaco \ud83c\uddf2\ud83c\udde8"
+      "title": "MCO - Monaco",
+      "emoji_title": "MCO - Monaco \ud83c\uddf2\ud83c\udde8"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#md",
-      "abbr": "md",
-      "name": "Moldova, Republic of",
-      "title": "MD - Moldova, Republic of",
-      "emoji_title": "MD - Moldova, Republic of \ud83c\uddf2\ud83c\udde9"
+      "uri": "http://www.wikidata.org/entity/Q217",
+      "code": "MDA",
+      "name": "Moldova",
+      "title": "MDA - Moldova",
+      "emoji_title": "MDA - Moldova \ud83c\uddf2\ud83c\udde9"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#me",
-      "abbr": "me",
-      "name": "Montenegro",
-      "title": "ME - Montenegro",
-      "emoji_title": "ME - Montenegro \ud83c\uddf2\ud83c\uddea"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#mf",
-      "abbr": "mf",
-      "name": "Saint Martin (French part)",
-      "title": "MF - Saint Martin (French part)",
-      "emoji_title": "MF - Saint Martin (French part) \ud83c\uddf2\ud83c\uddeb"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#mg",
-      "abbr": "mg",
+      "uri": "http://www.wikidata.org/entity/Q1019",
+      "code": "MDG",
       "name": "Madagascar",
-      "title": "MG - Madagascar",
-      "emoji_title": "MG - Madagascar \ud83c\uddf2\ud83c\uddec"
+      "title": "MDG - Madagascar",
+      "emoji_title": "MDG - Madagascar \ud83c\uddf2\ud83c\uddec"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#mh",
-      "abbr": "mh",
-      "name": "Marshall Islands",
-      "title": "MH - Marshall Islands",
-      "emoji_title": "MH - Marshall Islands \ud83c\uddf2\ud83c\udded"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#mk",
-      "abbr": "mk",
-      "name": "Macedonia, the former Yugoslav Republic of",
-      "title": "MK - Macedonia, the former Yugoslav Republic of",
-      "emoji_title": "MK - Macedonia, the former Yugoslav Republic of \ud83c\uddf2\ud83c\uddf0"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#ml",
-      "abbr": "ml",
-      "name": "Mali",
-      "title": "ML - Mali",
-      "emoji_title": "ML - Mali \ud83c\uddf2\ud83c\uddf1"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#mm",
-      "abbr": "mm",
-      "name": "Myanmar",
-      "title": "MM - Myanmar",
-      "emoji_title": "MM - Myanmar \ud83c\uddf2\ud83c\uddf2"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#mn",
-      "abbr": "mn",
-      "name": "Mongolia",
-      "title": "MN - Mongolia",
-      "emoji_title": "MN - Mongolia \ud83c\uddf2\ud83c\uddf3"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#mo",
-      "abbr": "mo",
-      "name": "Macao",
-      "title": "MO - Macao",
-      "emoji_title": "MO - Macao \ud83c\uddf2\ud83c\uddf4"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#mp",
-      "abbr": "mp",
-      "name": "Northern Mariana Islands",
-      "title": "MP - Northern Mariana Islands",
-      "emoji_title": "MP - Northern Mariana Islands \ud83c\uddf2\ud83c\uddf5"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#mq",
-      "abbr": "mq",
-      "name": "Martinique",
-      "title": "MQ - Martinique",
-      "emoji_title": "MQ - Martinique \ud83c\uddf2\ud83c\uddf6"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#mr",
-      "abbr": "mr",
-      "name": "Mauritania",
-      "title": "MR - Mauritania",
-      "emoji_title": "MR - Mauritania \ud83c\uddf2\ud83c\uddf7"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#ms",
-      "abbr": "ms",
-      "name": "Montserrat",
-      "title": "MS - Montserrat",
-      "emoji_title": "MS - Montserrat \ud83c\uddf2\ud83c\uddf8"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#mt",
-      "abbr": "mt",
-      "name": "Malta",
-      "title": "MT - Malta",
-      "emoji_title": "MT - Malta \ud83c\uddf2\ud83c\uddf9"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#mu",
-      "abbr": "mu",
-      "name": "Mauritius",
-      "title": "MU - Mauritius",
-      "emoji_title": "MU - Mauritius \ud83c\uddf2\ud83c\uddfa"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#mv",
-      "abbr": "mv",
+      "uri": "http://www.wikidata.org/entity/Q826",
+      "code": "MDV",
       "name": "Maldives",
-      "title": "MV - Maldives",
-      "emoji_title": "MV - Maldives \ud83c\uddf2\ud83c\uddfb"
+      "title": "MDV - Maldives",
+      "emoji_title": "MDV - Maldives \ud83c\uddf2\ud83c\uddfb"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#mw",
-      "abbr": "mw",
-      "name": "Malawi",
-      "title": "MW - Malawi",
-      "emoji_title": "MW - Malawi \ud83c\uddf2\ud83c\uddfc"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#mx",
-      "abbr": "mx",
+      "uri": "http://www.wikidata.org/entity/Q96",
+      "code": "MEX",
       "name": "Mexico",
-      "title": "MX - Mexico",
-      "emoji_title": "MX - Mexico \ud83c\uddf2\ud83c\uddfd"
+      "title": "MEX - Mexico",
+      "emoji_title": "MEX - Mexico \ud83c\uddf2\ud83c\uddfd"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#my",
-      "abbr": "my",
-      "name": "Malaysia",
-      "title": "MY - Malaysia",
-      "emoji_title": "MY - Malaysia \ud83c\uddf2\ud83c\uddfe"
+      "uri": "http://www.wikidata.org/entity/Q709",
+      "code": "MHL",
+      "name": "Marshall Islands",
+      "title": "MHL - Marshall Islands",
+      "emoji_title": "MHL - Marshall Islands \ud83c\uddf2\ud83c\udded"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#mz",
-      "abbr": "mz",
+      "uri": "http://www.wikidata.org/entity/Q221",
+      "code": "MKD",
+      "name": "North Macedonia",
+      "title": "MKD - North Macedonia",
+      "emoji_title": "MKD - North Macedonia \ud83c\uddf2\ud83c\uddf0"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q912",
+      "code": "MLI",
+      "name": "Mali",
+      "title": "MLI - Mali",
+      "emoji_title": "MLI - Mali \ud83c\uddf2\ud83c\uddf1"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q233",
+      "code": "MLT",
+      "name": "Malta",
+      "title": "MLT - Malta",
+      "emoji_title": "MLT - Malta \ud83c\uddf2\ud83c\uddf9"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q836",
+      "code": "MMR",
+      "name": "Myanmar",
+      "title": "MMR - Myanmar",
+      "emoji_title": "MMR - Myanmar \ud83c\uddf2\ud83c\uddf2"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q236",
+      "code": "MNE",
+      "name": "Montenegro",
+      "title": "MNE - Montenegro",
+      "emoji_title": "MNE - Montenegro \ud83c\uddf2\ud83c\uddea"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q711",
+      "code": "MNG",
+      "name": "Mongolia",
+      "title": "MNG - Mongolia",
+      "emoji_title": "MNG - Mongolia \ud83c\uddf2\ud83c\uddf3"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q1029",
+      "code": "MOZ",
       "name": "Mozambique",
-      "title": "MZ - Mozambique",
-      "emoji_title": "MZ - Mozambique \ud83c\uddf2\ud83c\uddff"
+      "title": "MOZ - Mozambique",
+      "emoji_title": "MOZ - Mozambique \ud83c\uddf2\ud83c\uddff"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#na",
-      "abbr": "na",
+      "uri": "http://www.wikidata.org/entity/Q1025",
+      "code": "MRT",
+      "name": "Mauritania",
+      "title": "MRT - Mauritania",
+      "emoji_title": "MRT - Mauritania \ud83c\uddf2\ud83c\uddf7"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q1027",
+      "code": "MUS",
+      "name": "Mauritius",
+      "title": "MUS - Mauritius",
+      "emoji_title": "MUS - Mauritius \ud83c\uddf2\ud83c\uddfa"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q1020",
+      "code": "MWI",
+      "name": "Malawi",
+      "title": "MWI - Malawi",
+      "emoji_title": "MWI - Malawi \ud83c\uddf2\ud83c\uddfc"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q833",
+      "code": "MYS",
+      "name": "Malaysia",
+      "title": "MYS - Malaysia",
+      "emoji_title": "MYS - Malaysia \ud83c\uddf2\ud83c\uddfe"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q1030",
+      "code": "NAM",
       "name": "Namibia",
-      "title": "NA - Namibia",
-      "emoji_title": "NA - Namibia \ud83c\uddf3\ud83c\udde6"
+      "title": "NAM - Namibia",
+      "emoji_title": "NAM - Namibia \ud83c\uddf3\ud83c\udde6"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#nc",
-      "abbr": "nc",
-      "name": "New Caledonia",
-      "title": "NC - New Caledonia",
-      "emoji_title": "NC - New Caledonia \ud83c\uddf3\ud83c\udde8"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#ne",
-      "abbr": "ne",
+      "uri": "http://www.wikidata.org/entity/Q1032",
+      "code": "NER",
       "name": "Niger",
-      "title": "NE - Niger",
-      "emoji_title": "NE - Niger \ud83c\uddf3\ud83c\uddea"
+      "title": "NER - Niger",
+      "emoji_title": "NER - Niger \ud83c\uddf3\ud83c\uddea"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#nf",
-      "abbr": "nf",
-      "name": "Norfolk Island",
-      "title": "NF - Norfolk Island",
-      "emoji_title": "NF - Norfolk Island \ud83c\uddf3\ud83c\uddeb"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#ng",
-      "abbr": "ng",
+      "uri": "http://www.wikidata.org/entity/Q1033",
+      "code": "NGA",
       "name": "Nigeria",
-      "title": "NG - Nigeria",
-      "emoji_title": "NG - Nigeria \ud83c\uddf3\ud83c\uddec"
+      "title": "NGA - Nigeria",
+      "emoji_title": "NGA - Nigeria \ud83c\uddf3\ud83c\uddec"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#ni",
-      "abbr": "ni",
+      "uri": "http://www.wikidata.org/entity/Q811",
+      "code": "NIC",
       "name": "Nicaragua",
-      "title": "NI - Nicaragua",
-      "emoji_title": "NI - Nicaragua \ud83c\uddf3\ud83c\uddee"
+      "title": "NIC - Nicaragua",
+      "emoji_title": "NIC - Nicaragua \ud83c\uddf3\ud83c\uddee"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#nl",
-      "abbr": "nl",
-      "name": "Netherlands",
-      "title": "NL - Netherlands",
-      "emoji_title": "NL - Netherlands \ud83c\uddf3\ud83c\uddf1"
+      "uri": "http://www.wikidata.org/entity/Q29999",
+      "code": "NLD",
+      "name": "Kingdom of the Netherlands",
+      "title": "NLD - Kingdom of the Netherlands",
+      "emoji_title": "NLD - Kingdom of the Netherlands \ud83c\uddf3\ud83c\uddf1"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#no",
-      "abbr": "no",
+      "uri": "http://www.wikidata.org/entity/Q20",
+      "code": "NOR",
       "name": "Norway",
-      "title": "NO - Norway",
-      "emoji_title": "NO - Norway \ud83c\uddf3\ud83c\uddf4"
+      "title": "NOR - Norway",
+      "emoji_title": "NOR - Norway \ud83c\uddf3\ud83c\uddf4"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#np",
-      "abbr": "np",
+      "uri": "http://www.wikidata.org/entity/Q837",
+      "code": "NPL",
       "name": "Nepal",
-      "title": "NP - Nepal",
-      "emoji_title": "NP - Nepal \ud83c\uddf3\ud83c\uddf5"
+      "title": "NPL - Nepal",
+      "emoji_title": "NPL - Nepal \ud83c\uddf3\ud83c\uddf5"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#nr",
-      "abbr": "nr",
+      "uri": "http://www.wikidata.org/entity/Q697",
+      "code": "NRU",
       "name": "Nauru",
-      "title": "NR - Nauru",
-      "emoji_title": "NR - Nauru \ud83c\uddf3\ud83c\uddf7"
+      "title": "NRU - Nauru",
+      "emoji_title": "NRU - Nauru \ud83c\uddf3\ud83c\uddf7"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#nu",
-      "abbr": "nu",
-      "name": "Niue",
-      "title": "NU - Niue",
-      "emoji_title": "NU - Niue \ud83c\uddf3\ud83c\uddfa"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#nz",
-      "abbr": "nz",
+      "uri": "http://www.wikidata.org/entity/Q664",
+      "code": "NZL",
       "name": "New Zealand",
-      "title": "NZ - New Zealand",
-      "emoji_title": "NZ - New Zealand \ud83c\uddf3\ud83c\uddff"
+      "title": "NZL - New Zealand",
+      "emoji_title": "NZL - New Zealand \ud83c\uddf3\ud83c\uddff"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#om",
-      "abbr": "om",
+      "uri": "http://www.wikidata.org/entity/Q842",
+      "code": "OMN",
       "name": "Oman",
-      "title": "OM - Oman",
-      "emoji_title": "OM - Oman \ud83c\uddf4\ud83c\uddf2"
+      "title": "OMN - Oman",
+      "emoji_title": "OMN - Oman \ud83c\uddf4\ud83c\uddf2"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#pa",
-      "abbr": "pa",
-      "name": "Panama",
-      "title": "PA - Panama",
-      "emoji_title": "PA - Panama \ud83c\uddf5\ud83c\udde6"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#pe",
-      "abbr": "pe",
-      "name": "Peru",
-      "title": "PE - Peru",
-      "emoji_title": "PE - Peru \ud83c\uddf5\ud83c\uddea"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#pf",
-      "abbr": "pf",
-      "name": "French Polynesia",
-      "title": "PF - French Polynesia",
-      "emoji_title": "PF - French Polynesia \ud83c\uddf5\ud83c\uddeb"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#pg",
-      "abbr": "pg",
-      "name": "Papua New Guinea",
-      "title": "PG - Papua New Guinea",
-      "emoji_title": "PG - Papua New Guinea \ud83c\uddf5\ud83c\uddec"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#ph",
-      "abbr": "ph",
-      "name": "Philippines",
-      "title": "PH - Philippines",
-      "emoji_title": "PH - Philippines \ud83c\uddf5\ud83c\udded"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#pk",
-      "abbr": "pk",
+      "uri": "http://www.wikidata.org/entity/Q843",
+      "code": "PAK",
       "name": "Pakistan",
-      "title": "PK - Pakistan",
-      "emoji_title": "PK - Pakistan \ud83c\uddf5\ud83c\uddf0"
+      "title": "PAK - Pakistan",
+      "emoji_title": "PAK - Pakistan \ud83c\uddf5\ud83c\uddf0"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#pl",
-      "abbr": "pl",
-      "name": "Poland",
-      "title": "PL - Poland",
-      "emoji_title": "PL - Poland \ud83c\uddf5\ud83c\uddf1"
+      "uri": "http://www.wikidata.org/entity/Q804",
+      "code": "PAN",
+      "name": "Panama",
+      "title": "PAN - Panama",
+      "emoji_title": "PAN - Panama \ud83c\uddf5\ud83c\udde6"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#pm",
-      "abbr": "pm",
-      "name": "Saint Pierre and Miquelon",
-      "title": "PM - Saint Pierre and Miquelon",
-      "emoji_title": "PM - Saint Pierre and Miquelon \ud83c\uddf5\ud83c\uddf2"
+      "uri": "http://www.wikidata.org/entity/Q419",
+      "code": "PER",
+      "name": "Peru",
+      "title": "PER - Peru",
+      "emoji_title": "PER - Peru \ud83c\uddf5\ud83c\uddea"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#pn",
-      "abbr": "pn",
-      "name": "Pitcairn",
-      "title": "PN - Pitcairn",
-      "emoji_title": "PN - Pitcairn \ud83c\uddf5\ud83c\uddf3"
+      "uri": "http://www.wikidata.org/entity/Q928",
+      "code": "PHL",
+      "name": "Philippines",
+      "title": "PHL - Philippines",
+      "emoji_title": "PHL - Philippines \ud83c\uddf5\ud83c\udded"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#pr",
-      "abbr": "pr",
-      "name": "Puerto Rico",
-      "title": "PR - Puerto Rico",
-      "emoji_title": "PR - Puerto Rico \ud83c\uddf5\ud83c\uddf7"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#ps",
-      "abbr": "ps",
-      "name": "Palestinian Territory, Occupied",
-      "title": "PS - Palestinian Territory, Occupied",
-      "emoji_title": "PS - Palestinian Territory, Occupied \ud83c\uddf5\ud83c\uddf8"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#pt",
-      "abbr": "pt",
-      "name": "Portugal",
-      "title": "PT - Portugal",
-      "emoji_title": "PT - Portugal \ud83c\uddf5\ud83c\uddf9"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#pw",
-      "abbr": "pw",
+      "uri": "http://www.wikidata.org/entity/Q695",
+      "code": "PLW",
       "name": "Palau",
-      "title": "PW - Palau",
-      "emoji_title": "PW - Palau \ud83c\uddf5\ud83c\uddfc"
+      "title": "PLW - Palau",
+      "emoji_title": "PLW - Palau \ud83c\uddf5\ud83c\uddfc"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#py",
-      "abbr": "py",
+      "uri": "http://www.wikidata.org/entity/Q691",
+      "code": "PNG",
+      "name": "Papua New Guinea",
+      "title": "PNG - Papua New Guinea",
+      "emoji_title": "PNG - Papua New Guinea \ud83c\uddf5\ud83c\uddec"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q36",
+      "code": "POL",
+      "name": "Poland",
+      "title": "POL - Poland",
+      "emoji_title": "POL - Poland \ud83c\uddf5\ud83c\uddf1"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q423",
+      "code": "PRK",
+      "name": "North Korea",
+      "title": "PRK - North Korea",
+      "emoji_title": "PRK - North Korea \ud83c\uddf0\ud83c\uddf5"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q45",
+      "code": "PRT",
+      "name": "Portugal",
+      "title": "PRT - Portugal",
+      "emoji_title": "PRT - Portugal \ud83c\uddf5\ud83c\uddf9"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q733",
+      "code": "PRY",
       "name": "Paraguay",
-      "title": "PY - Paraguay",
-      "emoji_title": "PY - Paraguay \ud83c\uddf5\ud83c\uddfe"
+      "title": "PRY - Paraguay",
+      "emoji_title": "PRY - Paraguay \ud83c\uddf5\ud83c\uddfe"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#qa",
-      "abbr": "qa",
+      "uri": "http://www.wikidata.org/entity/Q846",
+      "code": "QAT",
       "name": "Qatar",
-      "title": "QA - Qatar",
-      "emoji_title": "QA - Qatar \ud83c\uddf6\ud83c\udde6"
+      "title": "QAT - Qatar",
+      "emoji_title": "QAT - Qatar \ud83c\uddf6\ud83c\udde6"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#re",
-      "abbr": "re",
-      "name": "Reunion \ufeff R\u00e9union",
-      "title": "RE - Reunion \ufeff R\u00e9union",
-      "emoji_title": "RE - Reunion \ufeff R\u00e9union \ud83c\uddf7\ud83c\uddea"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#ro",
-      "abbr": "ro",
+      "uri": "http://www.wikidata.org/entity/Q218",
+      "code": "ROU",
       "name": "Romania",
-      "title": "RO - Romania",
-      "emoji_title": "RO - Romania \ud83c\uddf7\ud83c\uddf4"
+      "title": "ROU - Romania",
+      "emoji_title": "ROU - Romania \ud83c\uddf7\ud83c\uddf4"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#rs",
-      "abbr": "rs",
-      "name": "Serbia",
-      "title": "RS - Serbia",
-      "emoji_title": "RS - Serbia \ud83c\uddf7\ud83c\uddf8"
+      "uri": "http://www.wikidata.org/entity/Q159",
+      "code": "RUS",
+      "name": "Russia",
+      "title": "RUS - Russia",
+      "emoji_title": "RUS - Russia \ud83c\uddf7\ud83c\uddfa"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#ru",
-      "abbr": "ru",
-      "name": "Russian Federation",
-      "title": "RU - Russian Federation",
-      "emoji_title": "RU - Russian Federation \ud83c\uddf7\ud83c\uddfa"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#rw",
-      "abbr": "rw",
+      "uri": "http://www.wikidata.org/entity/Q1037",
+      "code": "RWA",
       "name": "Rwanda",
-      "title": "RW - Rwanda",
-      "emoji_title": "RW - Rwanda \ud83c\uddf7\ud83c\uddfc"
+      "title": "RWA - Rwanda",
+      "emoji_title": "RWA - Rwanda \ud83c\uddf7\ud83c\uddfc"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#sa",
-      "abbr": "sa",
+      "uri": "http://www.wikidata.org/entity/Q851",
+      "code": "SAU",
       "name": "Saudi Arabia",
-      "title": "SA - Saudi Arabia",
-      "emoji_title": "SA - Saudi Arabia \ud83c\uddf8\ud83c\udde6"
+      "title": "SAU - Saudi Arabia",
+      "emoji_title": "SAU - Saudi Arabia \ud83c\uddf8\ud83c\udde6"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#sb",
-      "abbr": "sb",
-      "name": "Solomon Islands",
-      "title": "SB - Solomon Islands",
-      "emoji_title": "SB - Solomon Islands \ud83c\uddf8\ud83c\udde7"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#sc",
-      "abbr": "sc",
-      "name": "Seychelles",
-      "title": "SC - Seychelles",
-      "emoji_title": "SC - Seychelles \ud83c\uddf8\ud83c\udde8"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#sd",
-      "abbr": "sd",
+      "uri": "http://www.wikidata.org/entity/Q1049",
+      "code": "SDN",
       "name": "Sudan",
-      "title": "SD - Sudan",
-      "emoji_title": "SD - Sudan \ud83c\uddf8\ud83c\udde9"
+      "title": "SDN - Sudan",
+      "emoji_title": "SDN - Sudan \ud83c\uddf8\ud83c\udde9"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#se",
-      "abbr": "se",
-      "name": "Sweden",
-      "title": "SE - Sweden",
-      "emoji_title": "SE - Sweden \ud83c\uddf8\ud83c\uddea"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#sg",
-      "abbr": "sg",
-      "name": "Singapore",
-      "title": "SG - Singapore",
-      "emoji_title": "SG - Singapore \ud83c\uddf8\ud83c\uddec"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#sh",
-      "abbr": "sh",
-      "name": "Saint Helena",
-      "title": "SH - Saint Helena",
-      "emoji_title": "SH - Saint Helena \ud83c\uddf8\ud83c\udded"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#si",
-      "abbr": "si",
-      "name": "Slovenia",
-      "title": "SI - Slovenia",
-      "emoji_title": "SI - Slovenia \ud83c\uddf8\ud83c\uddee"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#sj",
-      "abbr": "sj",
-      "name": "Svalbard and Jan Mayen",
-      "title": "SJ - Svalbard and Jan Mayen",
-      "emoji_title": "SJ - Svalbard and Jan Mayen \ud83c\uddf8\ud83c\uddef"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#sk",
-      "abbr": "sk",
-      "name": "Slovakia",
-      "title": "SK - Slovakia",
-      "emoji_title": "SK - Slovakia \ud83c\uddf8\ud83c\uddf0"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#sl",
-      "abbr": "sl",
-      "name": "Sierra Leone",
-      "title": "SL - Sierra Leone",
-      "emoji_title": "SL - Sierra Leone \ud83c\uddf8\ud83c\uddf1"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#sm",
-      "abbr": "sm",
-      "name": "San Marino",
-      "title": "SM - San Marino",
-      "emoji_title": "SM - San Marino \ud83c\uddf8\ud83c\uddf2"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#sn",
-      "abbr": "sn",
+      "uri": "http://www.wikidata.org/entity/Q1041",
+      "code": "SEN",
       "name": "Senegal",
-      "title": "SN - Senegal",
-      "emoji_title": "SN - Senegal \ud83c\uddf8\ud83c\uddf3"
+      "title": "SEN - Senegal",
+      "emoji_title": "SEN - Senegal \ud83c\uddf8\ud83c\uddf3"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#so",
-      "abbr": "so",
-      "name": "Somalia",
-      "title": "SO - Somalia",
-      "emoji_title": "SO - Somalia \ud83c\uddf8\ud83c\uddf4"
+      "uri": "http://www.wikidata.org/entity/Q334",
+      "code": "SGP",
+      "name": "Singapore",
+      "title": "SGP - Singapore",
+      "emoji_title": "SGP - Singapore \ud83c\uddf8\ud83c\uddec"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#sr",
-      "abbr": "sr",
-      "name": "Suriname",
-      "title": "SR - Suriname",
-      "emoji_title": "SR - Suriname \ud83c\uddf8\ud83c\uddf7"
+      "uri": "http://www.wikidata.org/entity/Q685",
+      "code": "SLB",
+      "name": "Solomon Islands",
+      "title": "SLB - Solomon Islands",
+      "emoji_title": "SLB - Solomon Islands \ud83c\uddf8\ud83c\udde7"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#st",
-      "abbr": "st",
-      "name": "Sao Tome and Principe",
-      "title": "ST - Sao Tome and Principe",
-      "emoji_title": "ST - Sao Tome and Principe \ud83c\uddf8\ud83c\uddf9"
+      "uri": "http://www.wikidata.org/entity/Q1044",
+      "code": "SLE",
+      "name": "Sierra Leone",
+      "title": "SLE - Sierra Leone",
+      "emoji_title": "SLE - Sierra Leone \ud83c\uddf8\ud83c\uddf1"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#sv",
-      "abbr": "sv",
+      "uri": "http://www.wikidata.org/entity/Q792",
+      "code": "SLV",
       "name": "El Salvador",
-      "title": "SV - El Salvador",
-      "emoji_title": "SV - El Salvador \ud83c\uddf8\ud83c\uddfb"
+      "title": "SLV - El Salvador",
+      "emoji_title": "SLV - El Salvador \ud83c\uddf8\ud83c\uddfb"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#sy",
-      "abbr": "sy",
-      "name": "Syrian Arab Republic",
-      "title": "SY - Syrian Arab Republic",
-      "emoji_title": "SY - Syrian Arab Republic \ud83c\uddf8\ud83c\uddfe"
+      "uri": "http://www.wikidata.org/entity/Q238",
+      "code": "SMR",
+      "name": "San Marino",
+      "title": "SMR - San Marino",
+      "emoji_title": "SMR - San Marino \ud83c\uddf8\ud83c\uddf2"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#sz",
-      "abbr": "sz",
-      "name": "Swaziland",
-      "title": "SZ - Swaziland",
-      "emoji_title": "SZ - Swaziland \ud83c\uddf8\ud83c\uddff"
+      "uri": "http://www.wikidata.org/entity/Q1045",
+      "code": "SOM",
+      "name": "Somalia",
+      "title": "SOM - Somalia",
+      "emoji_title": "SOM - Somalia \ud83c\uddf8\ud83c\uddf4"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#tc",
-      "abbr": "tc",
-      "name": "Turks and Caicos Islands",
-      "title": "TC - Turks and Caicos Islands",
-      "emoji_title": "TC - Turks and Caicos Islands \ud83c\uddf9\ud83c\udde8"
+      "uri": "http://www.wikidata.org/entity/Q403",
+      "code": "SRB",
+      "name": "Serbia",
+      "title": "SRB - Serbia",
+      "emoji_title": "SRB - Serbia \ud83c\uddf7\ud83c\uddf8"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#td",
-      "abbr": "td",
+      "uri": "http://www.wikidata.org/entity/Q958",
+      "code": "SSD",
+      "name": "South Sudan",
+      "title": "SSD - South Sudan",
+      "emoji_title": "SSD - South Sudan \ud83c\uddf8\ud83c\uddf8"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q1039",
+      "code": "STP",
+      "name": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+      "title": "STP - S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+      "emoji_title": "STP - S\u00e3o Tom\u00e9 and Pr\u00edncipe \ud83c\uddf8\ud83c\uddf9"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q730",
+      "code": "SUR",
+      "name": "Suriname",
+      "title": "SUR - Suriname",
+      "emoji_title": "SUR - Suriname \ud83c\uddf8\ud83c\uddf7"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q214",
+      "code": "SVK",
+      "name": "Slovakia",
+      "title": "SVK - Slovakia",
+      "emoji_title": "SVK - Slovakia \ud83c\uddf8\ud83c\uddf0"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q215",
+      "code": "SVN",
+      "name": "Slovenia",
+      "title": "SVN - Slovenia",
+      "emoji_title": "SVN - Slovenia \ud83c\uddf8\ud83c\uddee"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q34",
+      "code": "SWE",
+      "name": "Sweden",
+      "title": "SWE - Sweden",
+      "emoji_title": "SWE - Sweden \ud83c\uddf8\ud83c\uddea"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q1050",
+      "code": "SWZ",
+      "name": "Eswatini",
+      "title": "SWZ - Eswatini",
+      "emoji_title": "SWZ - Eswatini \ud83c\uddf8\ud83c\uddff"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q1042",
+      "code": "SYC",
+      "name": "Seychelles",
+      "title": "SYC - Seychelles",
+      "emoji_title": "SYC - Seychelles \ud83c\uddf8\ud83c\udde8"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q858",
+      "code": "SYR",
+      "name": "Syria",
+      "title": "SYR - Syria",
+      "emoji_title": "SYR - Syria \ud83c\uddf8\ud83c\uddfe"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q657",
+      "code": "TCD",
       "name": "Chad",
-      "title": "TD - Chad",
-      "emoji_title": "TD - Chad \ud83c\uddf9\ud83c\udde9"
+      "title": "TCD - Chad",
+      "emoji_title": "TCD - Chad \ud83c\uddf9\ud83c\udde9"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#tf",
-      "abbr": "tf",
-      "name": "French Southern Territories",
-      "title": "TF - French Southern Territories",
-      "emoji_title": "TF - French Southern Territories \ud83c\uddf9\ud83c\uddeb"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#tg",
-      "abbr": "tg",
+      "uri": "http://www.wikidata.org/entity/Q945",
+      "code": "TGO",
       "name": "Togo",
-      "title": "TG - Togo",
-      "emoji_title": "TG - Togo \ud83c\uddf9\ud83c\uddec"
+      "title": "TGO - Togo",
+      "emoji_title": "TGO - Togo \ud83c\uddf9\ud83c\uddec"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#th",
-      "abbr": "th",
+      "uri": "http://www.wikidata.org/entity/Q869",
+      "code": "THA",
       "name": "Thailand",
-      "title": "TH - Thailand",
-      "emoji_title": "TH - Thailand \ud83c\uddf9\ud83c\udded"
+      "title": "THA - Thailand",
+      "emoji_title": "THA - Thailand \ud83c\uddf9\ud83c\udded"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#tj",
-      "abbr": "tj",
+      "uri": "http://www.wikidata.org/entity/Q863",
+      "code": "TJK",
       "name": "Tajikistan",
-      "title": "TJ - Tajikistan",
-      "emoji_title": "TJ - Tajikistan \ud83c\uddf9\ud83c\uddef"
+      "title": "TJK - Tajikistan",
+      "emoji_title": "TJK - Tajikistan \ud83c\uddf9\ud83c\uddef"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#tk",
-      "abbr": "tk",
-      "name": "Tokelau",
-      "title": "TK - Tokelau",
-      "emoji_title": "TK - Tokelau \ud83c\uddf9\ud83c\uddf0"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#tl",
-      "abbr": "tl",
-      "name": "Timor-Leste",
-      "title": "TL - Timor-Leste",
-      "emoji_title": "TL - Timor-Leste \ud83c\uddf9\ud83c\uddf1"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#tm",
-      "abbr": "tm",
+      "uri": "http://www.wikidata.org/entity/Q874",
+      "code": "TKM",
       "name": "Turkmenistan",
-      "title": "TM - Turkmenistan",
-      "emoji_title": "TM - Turkmenistan \ud83c\uddf9\ud83c\uddf2"
+      "title": "TKM - Turkmenistan",
+      "emoji_title": "TKM - Turkmenistan \ud83c\uddf9\ud83c\uddf2"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#tn",
-      "abbr": "tn",
-      "name": "Tunisia",
-      "title": "TN - Tunisia",
-      "emoji_title": "TN - Tunisia \ud83c\uddf9\ud83c\uddf3"
+      "uri": "http://www.wikidata.org/entity/Q574",
+      "code": "TLS",
+      "name": "East Timor",
+      "title": "TLS - East Timor",
+      "emoji_title": "TLS - East Timor \ud83c\uddf9\ud83c\uddf1"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#to",
-      "abbr": "to",
+      "uri": "http://www.wikidata.org/entity/Q678",
+      "code": "TON",
       "name": "Tonga",
-      "title": "TO - Tonga",
-      "emoji_title": "TO - Tonga \ud83c\uddf9\ud83c\uddf4"
+      "title": "TON - Tonga",
+      "emoji_title": "TON - Tonga \ud83c\uddf9\ud83c\uddf4"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#tr",
-      "abbr": "tr",
-      "name": "Turkey",
-      "title": "TR - Turkey",
-      "emoji_title": "TR - Turkey \ud83c\uddf9\ud83c\uddf7"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#tt",
-      "abbr": "tt",
+      "uri": "http://www.wikidata.org/entity/Q754",
+      "code": "TTO",
       "name": "Trinidad and Tobago",
-      "title": "TT - Trinidad and Tobago",
-      "emoji_title": "TT - Trinidad and Tobago \ud83c\uddf9\ud83c\uddf9"
+      "title": "TTO - Trinidad and Tobago",
+      "emoji_title": "TTO - Trinidad and Tobago \ud83c\uddf9\ud83c\uddf9"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#tv",
-      "abbr": "tv",
+      "uri": "http://www.wikidata.org/entity/Q948",
+      "code": "TUN",
+      "name": "Tunisia",
+      "title": "TUN - Tunisia",
+      "emoji_title": "TUN - Tunisia \ud83c\uddf9\ud83c\uddf3"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q43",
+      "code": "TUR",
+      "name": "Turkey",
+      "title": "TUR - Turkey",
+      "emoji_title": "TUR - Turkey \ud83c\uddf9\ud83c\uddf7"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q672",
+      "code": "TUV",
       "name": "Tuvalu",
-      "title": "TV - Tuvalu",
-      "emoji_title": "TV - Tuvalu \ud83c\uddf9\ud83c\uddfb"
+      "title": "TUV - Tuvalu",
+      "emoji_title": "TUV - Tuvalu \ud83c\uddf9\ud83c\uddfb"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#tw",
-      "abbr": "tw",
-      "name": "Taiwan, Province of China",
-      "title": "TW - Taiwan, Province of China",
-      "emoji_title": "TW - Taiwan, Province of China \ud83c\uddf9\ud83c\uddfc"
+      "uri": "http://www.wikidata.org/entity/Q924",
+      "code": "TZA",
+      "name": "Tanzania",
+      "title": "TZA - Tanzania",
+      "emoji_title": "TZA - Tanzania \ud83c\uddf9\ud83c\uddff"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#tz",
-      "abbr": "tz",
-      "name": "Tanzania, United Republic of",
-      "title": "TZ - Tanzania, United Republic of",
-      "emoji_title": "TZ - Tanzania, United Republic of \ud83c\uddf9\ud83c\uddff"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#ua",
-      "abbr": "ua",
-      "name": "Ukraine",
-      "title": "UA - Ukraine",
-      "emoji_title": "UA - Ukraine \ud83c\uddfa\ud83c\udde6"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#ug",
-      "abbr": "ug",
+      "uri": "http://www.wikidata.org/entity/Q1036",
+      "code": "UGA",
       "name": "Uganda",
-      "title": "UG - Uganda",
-      "emoji_title": "UG - Uganda \ud83c\uddfa\ud83c\uddec"
+      "title": "UGA - Uganda",
+      "emoji_title": "UGA - Uganda \ud83c\uddfa\ud83c\uddec"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#um",
-      "abbr": "um",
-      "name": "United States Minor Outlying Islands",
-      "title": "UM - United States Minor Outlying Islands",
-      "emoji_title": "UM - United States Minor Outlying Islands \ud83c\uddfa\ud83c\uddf2"
+      "uri": "http://www.wikidata.org/entity/Q212",
+      "code": "UKR",
+      "name": "Ukraine",
+      "title": "UKR - Ukraine",
+      "emoji_title": "UKR - Ukraine \ud83c\uddfa\ud83c\udde6"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#us",
-      "abbr": "us",
-      "name": "United States",
-      "title": "US - United States",
-      "emoji_title": "US - United States \ud83c\uddfa\ud83c\uddf8"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#uy",
-      "abbr": "uy",
+      "uri": "http://www.wikidata.org/entity/Q77",
+      "code": "URY",
       "name": "Uruguay",
-      "title": "UY - Uruguay",
-      "emoji_title": "UY - Uruguay \ud83c\uddfa\ud83c\uddfe"
+      "title": "URY - Uruguay",
+      "emoji_title": "URY - Uruguay \ud83c\uddfa\ud83c\uddfe"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#uz",
-      "abbr": "uz",
+      "uri": "http://www.wikidata.org/entity/Q30",
+      "code": "USA",
+      "name": "United States of America",
+      "title": "USA - United States of America",
+      "emoji_title": "USA - United States of America \ud83c\uddfa\ud83c\uddf8"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q265",
+      "code": "UZB",
       "name": "Uzbekistan",
-      "title": "UZ - Uzbekistan",
-      "emoji_title": "UZ - Uzbekistan \ud83c\uddfa\ud83c\uddff"
+      "title": "UZB - Uzbekistan",
+      "emoji_title": "UZB - Uzbekistan \ud83c\uddfa\ud83c\uddff"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#va",
-      "abbr": "va",
-      "name": "Holy See (Vatican City State)",
-      "title": "VA - Holy See (Vatican City State)",
-      "emoji_title": "VA - Holy See (Vatican City State) \ud83c\uddfb\ud83c\udde6"
+      "uri": "http://www.wikidata.org/entity/Q237",
+      "code": "VAT",
+      "name": "Vatican City",
+      "title": "VAT - Vatican City",
+      "emoji_title": "VAT - Vatican City \ud83c\uddfb\ud83c\udde6"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#vc",
-      "abbr": "vc",
+      "uri": "http://www.wikidata.org/entity/Q757",
+      "code": "VCT",
       "name": "Saint Vincent and the Grenadines",
-      "title": "VC - Saint Vincent and the Grenadines",
-      "emoji_title": "VC - Saint Vincent and the Grenadines \ud83c\uddfb\ud83c\udde8"
+      "title": "VCT - Saint Vincent and the Grenadines",
+      "emoji_title": "VCT - Saint Vincent and the Grenadines \ud83c\uddfb\ud83c\udde8"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#ve",
-      "abbr": "ve",
-      "name": "Venezuela, Bolivarian Republic of",
-      "title": "VE - Venezuela, Bolivarian Republic of",
-      "emoji_title": "VE - Venezuela, Bolivarian Republic of \ud83c\uddfb\ud83c\uddea"
+      "uri": "http://www.wikidata.org/entity/Q717",
+      "code": "VEN",
+      "name": "Venezuela",
+      "title": "VEN - Venezuela",
+      "emoji_title": "VEN - Venezuela \ud83c\uddfb\ud83c\uddea"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#vg",
-      "abbr": "vg",
-      "name": "Virgin Islands, British",
-      "title": "VG - Virgin Islands, British",
-      "emoji_title": "VG - Virgin Islands, British \ud83c\uddfb\ud83c\uddec"
+      "uri": "http://www.wikidata.org/entity/Q881",
+      "code": "VNM",
+      "name": "Vietnam",
+      "title": "VNM - Vietnam",
+      "emoji_title": "VNM - Vietnam \ud83c\uddfb\ud83c\uddf3"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#vi",
-      "abbr": "vi",
-      "name": "Virgin Islands, U.S.",
-      "title": "VI - Virgin Islands, U.S.",
-      "emoji_title": "VI - Virgin Islands, U.S. \ud83c\uddfb\ud83c\uddee"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#vn",
-      "abbr": "vn",
-      "name": "Viet Nam",
-      "title": "VN - Viet Nam",
-      "emoji_title": "VN - Viet Nam \ud83c\uddfb\ud83c\uddf3"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#vu",
-      "abbr": "vu",
+      "uri": "http://www.wikidata.org/entity/Q686",
+      "code": "VUT",
       "name": "Vanuatu",
-      "title": "VU - Vanuatu",
-      "emoji_title": "VU - Vanuatu \ud83c\uddfb\ud83c\uddfa"
+      "title": "VUT - Vanuatu",
+      "emoji_title": "VUT - Vanuatu \ud83c\uddfb\ud83c\uddfa"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#wf",
-      "abbr": "wf",
-      "name": "Wallis and Futuna",
-      "title": "WF - Wallis and Futuna",
-      "emoji_title": "WF - Wallis and Futuna \ud83c\uddfc\ud83c\uddeb"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#ws",
-      "abbr": "ws",
+      "uri": "http://www.wikidata.org/entity/Q683",
+      "code": "WSM",
       "name": "Samoa",
-      "title": "WS - Samoa",
-      "emoji_title": "WS - Samoa \ud83c\uddfc\ud83c\uddf8"
+      "title": "WSM - Samoa",
+      "emoji_title": "WSM - Samoa \ud83c\uddfc\ud83c\uddf8"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#ye",
-      "abbr": "ye",
+      "uri": "http://www.wikidata.org/entity/Q805",
+      "code": "YEM",
       "name": "Yemen",
-      "title": "YE - Yemen",
-      "emoji_title": "YE - Yemen \ud83c\uddfe\ud83c\uddea"
+      "title": "YEM - Yemen",
+      "emoji_title": "YEM - Yemen \ud83c\uddfe\ud83c\uddea"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#yt",
-      "abbr": "yt",
-      "name": "Mayotte",
-      "title": "YT - Mayotte",
-      "emoji_title": "YT - Mayotte \ud83c\uddfe\ud83c\uddf9"
-    },
-    {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#za",
-      "abbr": "za",
+      "uri": "http://www.wikidata.org/entity/Q258",
+      "code": "ZAF",
       "name": "South Africa",
-      "title": "ZA - South Africa",
-      "emoji_title": "ZA - South Africa \ud83c\uddff\ud83c\udde6"
+      "title": "ZAF - South Africa",
+      "emoji_title": "ZAF - South Africa \ud83c\uddff\ud83c\udde6"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#zm",
-      "abbr": "zm",
+      "uri": "http://www.wikidata.org/entity/Q953",
+      "code": "ZMB",
       "name": "Zambia",
-      "title": "ZM - Zambia",
-      "emoji_title": "ZM - Zambia \ud83c\uddff\ud83c\uddf2"
+      "title": "ZMB - Zambia",
+      "emoji_title": "ZMB - Zambia \ud83c\uddff\ud83c\uddf2"
     },
     {
-      "uri": "http://eulersharp.sourceforge.net/2003/03swap/countries#zw",
-      "abbr": "zw",
+      "uri": "http://www.wikidata.org/entity/Q954",
+      "code": "ZWE",
       "name": "Zimbabwe",
-      "title": "ZW - Zimbabwe",
-      "emoji_title": "ZW - Zimbabwe \ud83c\uddff\ud83c\uddfc"
+      "title": "ZWE - Zimbabwe",
+      "emoji_title": "ZWE - Zimbabwe \ud83c\uddff\ud83c\uddfc"
     }
   ]
 }

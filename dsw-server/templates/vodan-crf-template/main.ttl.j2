@@ -6,11 +6,13 @@
 @prefix vodan_inst: <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/> .
 @prefix vodan_avpu: <http://purl.org/vodan/whocovid19crfsemdatamodel/instances/avpu-list/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
-# Using VODAN ontology 1.1.3
+# Using VODAN ontology 1.1.4
+# See: https://github.com/FAIRDataTeam/WHO-COVID-CRF
 
 <{{ ctx.config.clientUrl }}/crfs/detail/{{ ctx.questionnaireUuid }}> a vodan:who-covid-19-rapid-crf ;
     {#- MODULE 1 #}
     {%- if crf.enrolmentDate|length > 0 %}
+    # MODULE 1 (ADMISSION)
     obo:BFO_0000051 [
       a vodan:Module_1 ;
       obo:BFO_0000051 [
@@ -1757,7 +1759,7 @@
         {%- endif %}
         {%- if crf.admissionLabResults_Urea == crf.admissionLabResults_Urea_done %}
         obo:BFO_0000051 [
-          a vodan:Urea_(BUN) ;
+          a vodan:Urea_BUN ;
           vodan:has_literal_value "{{ crf.admissionLabResults_Urea_value }}"^^xsd:float;
           {%- if crf.admissionLabResults_Urea_units|length > 0 %}
           vodan:has_other_measurement_unit_label "{{ crf.admissionLabResults_Urea_units }}" ;
@@ -1765,7 +1767,7 @@
         ] ;
         {%- elif crf.admissionLabResults_Urea == crf.admissionLabResults_Urea_notdone %}
         obo:BFO_0000051 [
-          a vodan:Urea_(BUN) ;
+          a vodan:Urea_BUN ;
           vodan:has_literal_value "Not done" ;
         ] ;
         {%- endif %}
@@ -1954,9 +1956,11 @@
       ] ;
       {%- endif %}
     ] ;
+    {%- else %}
+    # MODULE 1 (ADMISSION) - missing enrolment date => skipped
     {%- endif %}
     {#- MODULE 2 (repeated) #}
-    # FOLLOW-UPs: {{ crf.module2N }} follow-ups in total
+    # MODULE 2 (FOLLOW-UPs): {{ crf.module2N }} follow-ups in total
     {%- for followUpIndex in range(crf.module2N) %}
     {%- set followupDate__path = crf.followupDate__path|replace("index_$module2", followUpIndex) -%}
     {%- set followupDate = repliesMap[followupDate__path]|reply_str_value -%}
@@ -2612,7 +2616,7 @@
         {%- set followupLabResults_Urea_units = repliesMap[followupLabResults_Urea_units__path]|reply_str_value -%}
         {%- if followupLabResults_Urea == crf.followupLabResults_Urea_done %}
         obo:BFO_0000051 [
-          a vodan:Urea_(BUN) ;
+          a vodan:Urea_BUN ;
           vodan:has_literal_value "{{ followupLabResults_Urea_value }}"^^xsd:float;
           {%- if followupLabResults_Urea_units|length > 0 %}
           vodan:has_other_measurement_unit_label "{{ followupLabResults_Urea_units }}" ;
@@ -2620,7 +2624,7 @@
         ] ;
         {%- elif followupLabResults_Urea == crf.followupLabResults_Urea_notdone %}
         obo:BFO_0000051 [
-          a vodan:Urea_(BUN) ;
+          a vodan:Urea_BUN ;
           vodan:has_literal_value "Not done" ;
         ] ;
         {%- endif %}
@@ -3538,10 +3542,13 @@
       ] ;
       {%- endif %}
     ] ;
+    {%- else %}
+    # FOLLOW-UP #{{ followUpIndex }} - missing follow-up date => skipped
     {%- endif %}
     {%- endfor %}
     {#- MODULE 3 #}
     {%- if crf.pathogenTest == crf.pathogenTest_open or crf.complications == crf.complications_open or crf.dischargeMedication == crf.dischargeMedication_open or crf.dischargeCare == crf.dischargeCare_open or crf.outcome == crf.outcome_open %}
+    # MODULE 3 (ADMISSION)
     obo:BFO_0000051 [
       a vodan:Module_3 ;
       {%- if crf.pathogenTest == crf.pathogenTest_open %}
@@ -4621,5 +4628,12 @@
       ] ;
       {%- endif %}
     ] ;
+    {%- else %}
+    # MODULE 3 (ADMISSION) - no subsection opened => skipped
     {%- endif %}
-    vodan:participant_id "{{ crf.pid }}" .
+    {%- if crf.pid %}
+    vodan:participant_id "{{ crf.pid }}" ;
+    {%- else %}
+    # Participant ID is not assigned
+    {%- endif %}
+    rdfs:comment "This is WHO COVID-19 eCRF (RDF) - VODAN." .
