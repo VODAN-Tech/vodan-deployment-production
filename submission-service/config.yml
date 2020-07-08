@@ -1,0 +1,12 @@
+triple-store:
+  # (!) SPARQL endpoint to store data (default uses the same triple-store and namespace as FDP)
+  sparql-endpoint: http://blazegraph:8080/blazegraph/namespace/kb/sparql
+  graph:
+   named: true
+   type: http://purl.org/vodan/whocovid19crfsemdatamodel/who-covid-19-rapid-crf
+
+fdp:
+  token: a274793046e34a219fd0ea6362fcca61a001500b71724f4c973a017031653c20
+  # (!) Insert UUID of distribution created in FAIR Data Point related to CRFs data
+  # Until the following line is commented, metadata in FDP won't be updated when CRF is submitted
+  # distribution: http://fdp_client/distribution/<distribution_uuid>

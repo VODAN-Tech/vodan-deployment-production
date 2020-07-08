@@ -3,7 +3,7 @@ general:
   # clientUrl: <dsw-url>
   clientUrl: https://dsw.vodan.fairdatapoint.org
   # (!) Change secret to some random value if you are running in production environment (due to security)
-  # serviceToken: <dsw-secret>
+  # secret: <dsw-secret>
   secret: b7zFNUhFYIFLmDSFKFkp0Bnp8Z3uWGnH
   # (!) Change serviceToken to some random value if you are running in production environment (due to security)
   # serviceToken: <dsw-service-token>

@@ -63,9 +63,9 @@ db.getCollection('appConfigs').insert(
         "enabled" : true,
         "services" : [
             {
-                "id" : "fdp",
-                "name" : "FAIR Data Point",
-                "description" : "",
+                "id" : "vodanSubmission",
+                "name" : "FAIR Data Storage",
+                "description" : "Store data in configured triple store and update related metadata in FAIR Data Point.",
                 "props" : [],
                 "supportedFormats" : [
                     {
@@ -75,11 +75,9 @@ db.getCollection('appConfigs').insert(
                 ],
                 "request" : {
                     "method" : "POST",
-                    // (!) change to tripleStoreUrl
-                    // "url" : "<triple-store-url>",
-                    "url" : "https://store.vodan.fairdatapoint.org/",
+                    "url" : "http://submission_service:8080/submit",
                     "headers" : {
-                        "Authorization" : "Bearer a274793046e34a219fd0ea6362fcca61a001500b71724f4c973a017031653c20"
+                        "Content-Type" : "text/turtle"
                     },
                     "multipart" : {
                         "enabled" : false,
@@ -11862,7 +11860,7 @@ db.getCollection("templates").insert({
     "version" : "0.1.0",
     "metamodelVersion" : 1,
     "description" : "WHO COVID CRF in RDF using ontology",
-    "readme" : "",
+    "readme" : "# WHO COVID CRF (RDF)\n\nTemplate for transforming WHO COVID-19 electronic CRFs into Turtle RDF. It is based on the [WHO COVID-19 Rapid Version CRF Semantic Data Model](https://github.com/FAIRDataTeam/WHO-COVID-CRF).\n\n## Changelog\n\n### 0.1.0\n\n* Initial export to Turtle (RDF) using semantic model v1.1.4",
     "license" : "Apache-2.0",
     "allowedPackages" : [
         {

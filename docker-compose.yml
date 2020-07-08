@@ -18,13 +18,13 @@ services:
     hostname: dsw_client
     environment:
     # (!) Change API_URL
-    #   API_URL: <dsw-url>
-        API_URL: https://api.dsw.vodan.fairdatapoint.org
+    # API_URL: <dsw-url>
+      API_URL: https://api.dsw.vodan.fairdatapoint.org
     volumes:
-     - ./dsw-client/variables.scss:/src/scss/customizations/_variables.scss:ro
-     - ./dsw-client/assets:/usr/share/nginx/html/assets:ro
-     - ./dsw-client/configuration/provisioning.json:/configuration/provisioning.json:ro
-     - ./dsw-client/favicon.ico:/usr/share/nginx/html/favicon.ico:ro
+      - ./dsw-client/variables.scss:/src/scss/customizations/_variables.scss:ro
+      - ./dsw-client/assets:/usr/share/nginx/html/assets:ro
+      - ./dsw-client/configuration/provisioning.json:/configuration/provisioning.json:ro
+      - ./dsw-client/favicon.ico:/usr/share/nginx/html/favicon.ico:ro
 
   docworker:
     image: datastewardshipwizard/document-worker:2.5.0
@@ -42,8 +42,8 @@ services:
     environment:
       MONGO_INITDB_DATABASE: wizard
     volumes:
-     - ./mongo/data:/data/db
-     - ./mongo/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+      - ./mongo/data:/data/db
+      - ./mongo/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
 
   rabbitmq:
     image: rabbitmq:3.8.2-management
@@ -69,15 +69,22 @@ services:
       - ./fdp-client/favicon.ico:/usr/share/nginx/html/favicon.ico:ro
 
   blazegraph:
-      image: metaphacts/blazegraph-basic:2.2.0-20160908.003514-6
-      volumes:
-          - ./blazegraph:/blazegraph-data
+    image: metaphacts/blazegraph-basic:2.2.0-20160908.003514-6
+    volumes:
+      - ./blazegraph:/blazegraph-data
 
   json_server:
     image: clue/json-server
     hostname: json_server
     volumes:
-      - "./json-server/db.json:/data/db.json:ro"
+      - ./json-server/db.json:/data/db.json:ro
+
+  submission_service:
+    image: datastewardshipwizard/triple-store-submission-service:1.0.0
+    restart: always
+    hostname: submission_service
+    volumes:
+      - ./submission-service/config.yml:/app/config.yml:ro
 
   proxy:
     image: nginx:1.17
