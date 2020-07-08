@@ -1,13 +1,17 @@
-# VODAN in the Box Deployment Configuration
+# VODAN in the Box Production Deployment Configuration
 
-This is an example deployment for VODAN. It contains preconfigured [Data Stewardship Wizard](https://ds-wizard.org) (DSW) and [FAIR Data Point](https://fairdatapoint.readthedocs.io/) (FDP).
+**‼ More information can be found in the [documentation 📕](https://docs.vodan.fairdatapoint.org/)**
+
+This is an example deployment of VODAN in the Box ready for a production usage. It contains preconfigured [Data Stewardship Wizard](https://ds-wizard.org) (DSW) and [FAIR Data Point](https://fairdatapoint.readthedocs.io/) (FDP).
+
+If you want to try it on your local machine, please use [the basic deployment configuration](https://github.com/VODAN-Tech/vodan-deployment-basic).
 
 ## Instructions
 
 **1. Clone repository**
 
 ```
-$ git clone https://github.com/codevence/vodan-deployment-example
+$ git clone https://github.com/VODAN-Tech/vodan-deployment-production
 ```
 
 **2. Edit configs**
@@ -38,4 +42,4 @@ $ docker-compose up -d
 
 ## Important notes
 
-For more information, see [FDP Docs](https://fairdatapoint.readthedocs.io/) and [DSW Docs](https://docs.ds-wizard.org)
+For more information, see [VODAN Docs](https://docs.vodan.fairdatapoint.org/), [FDP Docs](https://fairdatapoint.readthedocs.io/) and [DSW Docs](https://docs.ds-wizard.org)

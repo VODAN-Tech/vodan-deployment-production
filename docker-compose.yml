@@ -2,7 +2,7 @@ version: '3'
 services:
 
   dsw_server:
-    image: datastewardshipwizard/wizard-server:develop
+    image: datastewardshipwizard/wizard-server:2.5.0
     restart: always
     hostname: dsw_server
     depends_on:
@@ -11,10 +11,9 @@ services:
     volumes:
       - ./dsw-server/application.yml:/application/engine-wizard/config/application.yml:ro
       - ./dsw-server/integration.yml:/application/engine-wizard/config/integration.yml:ro
-      - ./dsw-server/templates:/application/engine-wizard/templates/dmp:ro
 
   dsw_client:
-    image: datastewardshipwizard/wizard-client:develop
+    image: datastewardshipwizard/wizard-client:2.5.0
     restart: always
     hostname: dsw_client
     environment:
@@ -28,13 +27,12 @@ services:
      - ./dsw-client/favicon.ico:/usr/share/nginx/html/favicon.ico:ro
 
   docworker:
-    image: datastewardshipwizard/document-worker:2.4.0
+    image: datastewardshipwizard/document-worker:2.5.0
     restart: always
     depends_on:
       - rabbitmq
     volumes:
       - ./docworker/config.yml:/app/config.yml:ro
-      - ./dsw-server/templates:/app/templates:ro
 
   mongo:
     image: mongo:4.2.3
@@ -78,7 +76,7 @@ services:
   json_server:
     image: clue/json-server
     hostname: json_server
-    volumes: 
+    volumes:
       - "./json-server/db.json:/data/db.json:ro"
 
   proxy:
