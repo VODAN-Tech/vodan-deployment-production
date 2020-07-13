@@ -72,6 +72,18 @@ services:
     image: metaphacts/blazegraph-basic:2.2.0-20160908.003514-6
     volumes:
       - ./blazegraph:/blazegraph-data
+  
+  agraph:
+    image: franzinc/agraph:v7.0.1
+    restart: always
+    # Uncommment if you want to use AllegroGraph session ports
+    #ports:
+    #  - 10000-10034:10000-10034
+    hostname: agraph
+    shm_size: '1gb'
+    volumes:
+      - ./allegrograph/data:/agraph/data/
+      - ./allegrograph/agraph.cfg:/agraph/etc/agraph.cfg
 
   json_server:
     image: clue/json-server
