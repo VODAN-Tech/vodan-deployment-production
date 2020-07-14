@@ -1,2 +1,4 @@
 mongo/data
 blazegraph/blazegraph.jnl
+allegrograph/data
+allegrograph/cert.pem

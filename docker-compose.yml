@@ -76,14 +76,15 @@ services:
   agraph:
     image: franzinc/agraph:v7.0.1
     restart: always
-    # Uncommment if you want to use AllegroGraph session ports
-    #ports:
-    #  - 10000-10034:10000-10034
+    ports:
+      - 10000-10035:10000-10035
+      - 8443:8443
     hostname: agraph
     shm_size: '1gb'
     volumes:
       - ./allegrograph/data:/agraph/data/
       - ./allegrograph/agraph.cfg:/agraph/etc/agraph.cfg
+      - ./allegrograph/cert.pem:/certs/cert.pem
 
   json_server:
     image: clue/json-server
