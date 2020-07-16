@@ -51,7 +51,7 @@ db.getCollection('appConfigs').insert(
         },
         "questionnaireVisibility" : {
             "enabled" : false,
-            "defaultValue" : "PrivateQuestionnaire"
+            "defaultValue" : "PublicQuestionnaire"
         },
         "summaryReport" : {
             "enabled" : false
