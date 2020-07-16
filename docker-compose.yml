@@ -93,7 +93,7 @@ services:
       - ./json-server/db.json:/data/db.json:ro
 
   submission_service:
-    image: datastewardshipwizard/triple-store-submission-service:1.0.0
+    image: datastewardshipwizard/triple-store-submission-service:1.1.0
     restart: always
     hostname: submission_service
     volumes:
