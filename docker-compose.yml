@@ -54,12 +54,14 @@ services:
 
   fdp:
     image: fairdata/fairdatapoint:1.6.0
+    restart: always
     hostname: fdp
     volumes:
       - ./fdp/application.yml:/fdp/application.yml:ro
 
   fdp_client:
     image: fairdata/fairdatapoint-client:1.6.0
+    restart: always
     hostname: fdp_client
     environment:
       - FDP_HOST=fdp
@@ -70,6 +72,7 @@ services:
 
   blazegraph:
     image: metaphacts/blazegraph-basic:2.2.0-20160908.003514-6
+    restart: always
     volumes:
       - ./blazegraph:/blazegraph-data
   
@@ -88,6 +91,7 @@ services:
 
   json_server:
     image: clue/json-server
+    restart: always
     hostname: json_server
     volumes:
       - ./json-server/db.json:/data/db.json:ro
@@ -101,6 +105,7 @@ services:
 
   proxy:
     image: nginx:1.17
+    restart: always
     ports:
       - 80:80
       - 443:443
