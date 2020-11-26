@@ -23,6 +23,8 @@ The DSW and FDP are mostly preconfigured. However, there are still some properti
 
 For running HTTPS, you need to generate certificates and mount it to the proxy. We recommend to use [Let's encrypt](https://letsencrypt.org/) together with [certbot](https://certbot.eff.org/). You need 3 certificates - for FDP, for DSW and for DSW API.
 
+Setup also certs renewal using `etc/cron.d/certbot` (adjust and copy to `/etc/cron.d/certbot`)
+
 **4. Run docker**
 
 ```
